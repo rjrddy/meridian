@@ -1,0 +1,20 @@
+services:
+  meridian:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      MERIDIAN_PASSWORD: ${MERIDIAN_PASSWORD:?Set MERIDIAN_PASSWORD in .env}
+      MERIDIAN_DB: /app/data/meridian.sqlite
+      COOKIE_SECURE: "0"
+    volumes:
+      - meridian-data:/app/data
+    init: true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+volumes:
+  meridian-data:

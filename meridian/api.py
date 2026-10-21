@@ -89,7 +89,9 @@ class Runtime:
         status = "complete"
         try:
             for event in events(**config.model_dump()):
-                started = time.perf_counter_ns()
+                if not batch:
+                    started = time.perf_counter_ns()
+                    capture_wall = time.time()
                 batch.append(event)
                 frame = engine.apply(event)
                 if event["kind"] != "tick":
@@ -103,6 +105,7 @@ class Runtime:
                     frame=frame,
                     commit_ms=commit_ms,
                     sent_at=time.time(),
+                    captured_at=capture_wall,
                     trace_id=run_id,
                 )
                 self.metrics["frames_total"] += 1
@@ -157,8 +160,13 @@ def create_app(path: str | None = None, password: str | None = None) -> FastAPI:
 
     @app.middleware("http")
     async def logging_middleware(request: Request, call_next):
-        if int(request.headers.get("content-length", "0")) > 8192:
-            return Response(status_code=413)
+        if request.method in ("POST", "PUT", "PATCH"):
+            body = bytearray()
+            async for chunk in request.stream():
+                body.extend(chunk)
+                if len(body) > 8192:
+                    return Response(status_code=413)
+            request._body = bytes(body)
         trace = secrets.token_hex(8)
         response = await call_next(request)
         response.headers["X-Trace-Id"] = trace

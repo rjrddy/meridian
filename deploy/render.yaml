@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: meridian-fusion
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: MERIDIAN_PASSWORD
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: MERIDIAN_DB
+        value: /app/data/meridian.sqlite
+# Free instances have ephemeral storage. This configuration is a demo only;
+# use a persistent disk on a suitable paid plan for durable history across redeploys.
