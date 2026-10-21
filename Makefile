@@ -6,7 +6,7 @@ setup:
 	$(PY) -m pip install -e '.[dev]'
 	npm ci --prefix apps/web
 build:
-	$(PY) setup.py build_ext --inplace
+	$(PY) -m pip install --no-deps -e .
 	npm run build --prefix apps/web
 lint:
 	$(PY) -m ruff check meridian tests benchmarks scripts setup.py

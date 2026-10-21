@@ -31,11 +31,13 @@ with sync_playwright() as p:
     page.get_by_role("status").filter(has_text="Bit-identical").wait_for()
     page.get_by_role("button", name="Measure synthetic batch").click()
     page.get_by_text("93.7%").wait_for()
+    page.evaluate("window.scrollTo(0,0)")
     page.screenshot(path=str(out / "console-desktop.png"), full_page=True)
     raw = page.evaluate("window.arrival")
     latencies = [(x["arrival"] - x["capture"]) * 1000 for x in raw]
     desktop_overflow = page.evaluate("document.documentElement.scrollWidth>innerWidth")
     page.set_viewport_size({"width": 390, "height": 844})
+    page.evaluate("window.scrollTo(0,0)")
     page.screenshot(path=str(out / "console-mobile.png"), full_page=True)
     mobile_overflow = page.evaluate("document.documentElement.scrollWidth>innerWidth")
     assert not errors and not desktop_overflow and not mobile_overflow
