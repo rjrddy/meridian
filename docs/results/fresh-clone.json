@@ -1,0 +1,8 @@
+{
+  "clone": "git clone --no-local /Users/rajreddy/dev/outreach/flagships/meridian /tmp/meridian-fresh-clone",
+  "command": "make setup build lint test",
+  "head": "17c38e36928554368bc509575845565754d6d3fb",
+  "exit_code": 0,
+  "environment": "independent temporary checkout with its own virtualenv and node_modules",
+  "docker_local": "not available; see GitHub Compose evidence"
+}

@@ -1,0 +1,12 @@
+{
+  "http_auth": true,
+  "websocket_frames": 8,
+  "static_asset": "/assets/index-DZOzr5Wq.js",
+  "replay": {
+    "frames": 8,
+    "identical": true,
+    "recorded_sha256": "b599532abd04189a9f7dc0d4c9481347a6b32a0c489c47bf99e8fae827f418dc",
+    "replay_sha256": "b599532abd04189a9f7dc0d4c9481347a6b32a0c489c47bf99e8fae827f418dc"
+  },
+  "seeded_units": 1000
+}

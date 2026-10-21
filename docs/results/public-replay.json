@@ -1,0 +1,13 @@
+{
+  "source": "https://db.csail.mit.edu/labdata/data.txt.gz",
+  "description": "https://db.lcs.mit.edu/labdata/labdata.html",
+  "source_sha256": "d99288c8f406ca6604d359ceaa0d8adfffa79e7095061a1e27dc4399f48c7225",
+  "records": 900,
+  "streams": 3,
+  "frames": 900,
+  "bit_identical": true,
+  "frame_sha256": "104e25d656bca963459ea1312e39d661f9c492f0b0a625d1bd59cd9f25feb4ad",
+  "accuracy": "not measured: no shared ground truth",
+  "limits": "Temperatures at different lab locations are not identical physical signals. Replay compatibility only. Clock timestamps treated as a common reference, no drift estimation.",
+  "redistribution": "Original archive not bundled; download from MIT. No explicit reuse license identified on source page."
+}

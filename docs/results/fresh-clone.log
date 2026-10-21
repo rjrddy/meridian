@@ -1,0 +1,142 @@
+python3 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (26.2.2)
+.venv/bin/python -m pip install -e '.[dev]'
+Obtaining file:///private/tmp/meridian-fresh-clone
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: fastapi==0.150.0 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (0.150.0)
+Requirement already satisfied: uvicorn==0.54.0 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (0.54.0)
+Requirement already satisfied: websockets==17.3 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (17.3)
+Requirement already satisfied: numpy==2.5.4 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (2.5.4)
+Requirement already satisfied: pytest==9.1.1 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (9.1.1)
+Requirement already satisfied: hypothesis==6.170.5 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (6.170.5)
+Requirement already satisfied: httpx==0.28.1 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (0.28.1)
+Requirement already satisfied: ruff==0.17.1 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (0.17.1)
+Requirement already satisfied: clang-format==23.1.0 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (23.1.0)
+Requirement already satisfied: pip-audit in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (2.10.1)
+Requirement already satisfied: playwright==1.64.0 in ./.venv/lib/python3.13/site-packages (from meridian-fusion==0.1.0) (1.64.0)
+Requirement already satisfied: starlette>=0.46.0 in ./.venv/lib/python3.13/site-packages (from fastapi==0.150.0->meridian-fusion==0.1.0) (1.9.0)
+Requirement already satisfied: pydantic>=2.9.0 in ./.venv/lib/python3.13/site-packages (from fastapi==0.150.0->meridian-fusion==0.1.0) (2.14.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in ./.venv/lib/python3.13/site-packages (from fastapi==0.150.0->meridian-fusion==0.1.0) (4.16.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in ./.venv/lib/python3.13/site-packages (from fastapi==0.150.0->meridian-fusion==0.1.0) (0.4.4)
+Requirement already satisfied: annotated-doc>=0.0.2 in ./.venv/lib/python3.13/site-packages (from fastapi==0.150.0->meridian-fusion==0.1.0) (0.0.5)
+Requirement already satisfied: opentelemetry-api>=1.44.0 in ./.venv/lib/python3.13/site-packages (from fastapi==0.150.0->meridian-fusion==0.1.0) (1.45.1)
+Requirement already satisfied: anyio in ./.venv/lib/python3.13/site-packages (from httpx==0.28.1->meridian-fusion==0.1.0) (4.15.1)
+Requirement already satisfied: certifi in ./.venv/lib/python3.13/site-packages (from httpx==0.28.1->meridian-fusion==0.1.0) (2026.10.19)
+Requirement already satisfied: httpcore==1.* in ./.venv/lib/python3.13/site-packages (from httpx==0.28.1->meridian-fusion==0.1.0) (1.0.9)
+Requirement already satisfied: idna in ./.venv/lib/python3.13/site-packages (from httpx==0.28.1->meridian-fusion==0.1.0) (3.20)
+Requirement already satisfied: sortedcontainers<3.0.0,>=2.1.0 in ./.venv/lib/python3.13/site-packages (from hypothesis==6.170.5->meridian-fusion==0.1.0) (2.4.0)
+Requirement already satisfied: pyee<15,>=13 in ./.venv/lib/python3.13/site-packages (from playwright==1.64.0->meridian-fusion==0.1.0) (14.0.0)
+Requirement already satisfied: greenlet<4.0.0,>=3.1.1 in ./.venv/lib/python3.13/site-packages (from playwright==1.64.0->meridian-fusion==0.1.0) (3.5.6)
+Requirement already satisfied: iniconfig>=1.0.1 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->meridian-fusion==0.1.0) (2.3.1)
+Requirement already satisfied: packaging>=22 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->meridian-fusion==0.1.0) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->meridian-fusion==0.1.0) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->meridian-fusion==0.1.0) (2.21.0)
+Requirement already satisfied: click>=7.0 in ./.venv/lib/python3.13/site-packages (from uvicorn==0.54.0->meridian-fusion==0.1.0) (8.5.0)
+Requirement already satisfied: h11>=0.8 in ./.venv/lib/python3.13/site-packages (from uvicorn==0.54.0->meridian-fusion==0.1.0) (0.16.0)
+Requirement already satisfied: annotated-types>=0.6.0 in ./.venv/lib/python3.13/site-packages (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0) (0.8.0)
+Requirement already satisfied: pydantic-core==2.50.1 in ./.venv/lib/python3.13/site-packages (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0) (2.50.1)
+Requirement already satisfied: CacheControl>=0.13.0 in ./.venv/lib/python3.13/site-packages (from CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0) (0.14.4)
+Requirement already satisfied: cyclonedx-python-lib<12,>=5 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (11.12.0)
+Requirement already satisfied: pip-api>=0.0.28 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (0.0.35)
+Requirement already satisfied: pip-requirements-parser>=32.0.0 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (32.0.1)
+Requirement already satisfied: requests>=2.31.0 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (2.34.2)
+Requirement already satisfied: rich>=12.4 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (15.0.0)
+Requirement already satisfied: tomli>=2.2.1 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (2.5.0)
+Requirement already satisfied: tomli-w>=1.2.0 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (1.2.0)
+Requirement already satisfied: platformdirs>=4.2.0 in ./.venv/lib/python3.13/site-packages (from pip-audit->meridian-fusion==0.1.0) (4.13.5)
+Requirement already satisfied: license-expression<31,>=30 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0) (30.4.4)
+Requirement already satisfied: packageurl-python<2,>=0.11 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0) (0.17.6)
+Requirement already satisfied: py-serializable<3.0.0,>=2.1.0 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0) (2.1.0)
+Requirement already satisfied: boolean.py>=4.0 in ./.venv/lib/python3.13/site-packages (from license-expression<31,>=30->cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0) (5.0)
+Requirement already satisfied: defusedxml<0.8.0,>=0.7.1 in ./.venv/lib/python3.13/site-packages (from py-serializable<3.0.0,>=2.1.0->cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0) (0.7.1)
+Requirement already satisfied: msgpack<2.0.0,>=0.5.2 in ./.venv/lib/python3.13/site-packages (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0) (1.2.3)
+Requirement already satisfied: filelock>=3.8.0 in ./.venv/lib/python3.13/site-packages (from CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0) (4.2.4)
+Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (from pip-api>=0.0.28->pip-audit->meridian-fusion==0.1.0) (26.2.2)
+Requirement already satisfied: pyparsing in ./.venv/lib/python3.13/site-packages (from pip-requirements-parser>=32.0.0->pip-audit->meridian-fusion==0.1.0) (3.3.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit->meridian-fusion==0.1.0) (3.5.2)
+Requirement already satisfied: urllib3<3,>=1.26 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit->meridian-fusion==0.1.0) (2.8.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./.venv/lib/python3.13/site-packages (from rich>=12.4->pip-audit->meridian-fusion==0.1.0) (4.2.0)
+Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit->meridian-fusion==0.1.0) (0.1.2)
+Building wheels for collected packages: meridian-fusion
+  Building editable for meridian-fusion (pyproject.toml): started
+  Building editable for meridian-fusion (pyproject.toml): finished with status 'done'
+  Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-0.editable-cp313-cp313-macosx_15_0_arm64.whl size=2945 sha256=6062953cadb822d7c60a68f36baf9966e72747fdcd965c08470d0b507a80e2cd
+  Stored in directory: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/pip-ephem-wheel-cache-1_280j6x/wheels/fe/69/0f/f9a40a71a3ed292537665937ec787fb1dd73f687f3e5323b63
+Successfully built meridian-fusion
+Installing collected packages: meridian-fusion
+  Attempting uninstall: meridian-fusion
+    Found existing installation: meridian-fusion 0.1.0
+    Uninstalling meridian-fusion-0.1.0:
+      Successfully uninstalled meridian-fusion-0.1.0
+Successfully installed meridian-fusion-0.1.0
+npm ci --prefix apps/web
+
+added 21 packages, and audited 22 packages in 1s
+
+5 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+.venv/bin/python -m pip install --no-deps -e .
+Obtaining file:///private/tmp/meridian-fresh-clone
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: meridian-fusion
+  Building editable for meridian-fusion (pyproject.toml): started
+  Building editable for meridian-fusion (pyproject.toml): finished with status 'done'
+  Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-0.editable-cp313-cp313-macosx_15_0_arm64.whl size=2945 sha256=a3fbb2f75f985bd8331a0dfdbe5f5ae922d9b104d8fe58a4b55f0cf8a6ac1750
+  Stored in directory: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/pip-ephem-wheel-cache-600_ez3l/wheels/fe/69/0f/f9a40a71a3ed292537665937ec787fb1dd73f687f3e5323b63
+Successfully built meridian-fusion
+Installing collected packages: meridian-fusion
+  Attempting uninstall: meridian-fusion
+    Found existing installation: meridian-fusion 0.1.0
+    Uninstalling meridian-fusion-0.1.0:
+      Successfully uninstalled meridian-fusion-0.1.0
+Successfully installed meridian-fusion-0.1.0
+npm run build --prefix apps/web
+
+> meridian-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-BhneZbza.css    7.10 kB │ gzip:  2.26 kB
+dist/assets/index-DZOzr5Wq.js   204.64 kB │ gzip: 64.18 kB
+✓ built in 435ms
+.venv/bin/python -m ruff check meridian tests benchmarks scripts setup.py
+All checks passed!
+.venv/bin/python -m ruff format --check meridian tests benchmarks scripts setup.py
+18 files already formatted
+.venv/bin/clang-format --dry-run --Werror core/fusion.cpp
+npm run lint --prefix apps/web
+
+> meridian-console@0.1.0 lint
+> tsc --noEmit
+
+.venv/bin/python -m pytest -q
+..............                                                           [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /private/tmp/meridian-fresh-clone/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+14 passed, 1 warning in 1.87s

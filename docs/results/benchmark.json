@@ -1,0 +1,57 @@
+{
+  "environment": {
+    "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "platform": "macOS-15.2-arm64-arm-64bit-Mach-O"
+  },
+  "dropout": [
+    {
+      "dropout": 0.0,
+      "ticks": 3000,
+      "input_events": 8503,
+      "rmse": 0.048471327278694604,
+      "event_p50_ms": 0.000292,
+      "event_p99_ms": 0.003333,
+      "events_per_second": 828957.8178141211,
+      "bit_identical": true,
+      "sha256": "86ee18396708a4b850c293f43bbc7207681bc55bf4f55388097c68338e0775db"
+    },
+    {
+      "dropout": 0.1,
+      "ticks": 3000,
+      "input_events": 7946,
+      "rmse": 0.05036047360466761,
+      "event_p50_ms": 0.000292,
+      "event_p99_ms": 0.0029815500000000073,
+      "events_per_second": 836905.5769129497,
+      "bit_identical": true,
+      "sha256": "eaf351bfc3d277c553dfbed8ac66af6b6dbc1336bb05cf66fc818cfa1a89c454"
+    },
+    {
+      "dropout": 0.3,
+      "ticks": 3000,
+      "input_events": 6829,
+      "rmse": 0.05365658582468479,
+      "event_p50_ms": 0.000292,
+      "event_p99_ms": 0.002125,
+      "events_per_second": 800613.4793109589,
+      "bit_identical": true,
+      "sha256": "e077338b313008284a294ad6260f98e204ba54c2a35eb85d1cd184f3ae5e6919"
+    }
+  ],
+  "durable": {
+    "ticks": 1000,
+    "batch_p50_ms": 0.1810415,
+    "batch_p99_ms": 0.6716800899999983,
+    "boundary": "first batch input through SQLite commit; no network or browser"
+  },
+  "station": {
+    "units": 1000,
+    "statuses": {
+      "out-of-spec": 53,
+      "pass": 937,
+      "timeout": 10
+    },
+    "yield_percent": 93.7,
+    "timeout_attempts": 88
+  }
+}

@@ -13,8 +13,8 @@ All figures below are derived by `scripts/render_readme.py` from saved output in
 | Measurement | Observed result | Raw evidence |
 |---|---|---|
 | Local unit/integration/property/chaos tests | 14 passed | [checks.log](docs/results/checks.log) |
-| Browser message-arrival latency, p50 / p99 | 1.329 / 3.136 ms | [browser.json](docs/results/browser.json), [raw samples](docs/results/browser-samples.json) |
-| Observed input rate during browser trial | 72.42 samples/s across 3 sources | [browser.json](docs/results/browser.json) |
+| Browser message-arrival latency, p50 / p99 | 0.719 / 6.187 ms | [browser.json](docs/results/browser.json), [raw samples](docs/results/browser-samples.json) |
+| Observed input rate during browser trial | 73.48 samples/s across 3 sources | [browser.json](docs/results/browser.json) |
 | Durable batch latency, p50 / p99 | 0.181 / 0.672 ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
 | Public sensor replay | 900 records; bit-identical: True | [public-replay.json](docs/results/public-replay.json) |
 | Synthetic test-station yield | 93.7% of 1000 units | [benchmark.json](docs/results/benchmark.json) |

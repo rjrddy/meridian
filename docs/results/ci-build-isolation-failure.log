@@ -1,0 +1,227 @@
+checks	Run make setup build lint test	﻿2026-10-21T03:13:54.3114113Z ##[group]Run make setup build lint test
+checks	Run make setup build lint test	2026-10-21T03:13:54.3115242Z ^[[36;1mmake setup build lint test^[[0m
+checks	Run make setup build lint test	2026-10-21T03:13:54.3503987Z shell: /usr/bin/bash -e {0}
+checks	Run make setup build lint test	2026-10-21T03:13:54.3504903Z env:
+checks	Run make setup build lint test	2026-10-21T03:13:54.3505814Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:13:54.3507312Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+checks	Run make setup build lint test	2026-10-21T03:13:54.3508803Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:13:54.3510148Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:13:54.3511499Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:13:54.3512992Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+checks	Run make setup build lint test	2026-10-21T03:13:54.3514186Z ##[endgroup]
+checks	Run make setup build lint test	2026-10-21T03:13:54.3643979Z python3 -m venv .venv
+checks	Run make setup build lint test	2026-10-21T03:13:56.6602682Z .venv/bin/python -m pip install --upgrade pip
+checks	Run make setup build lint test	2026-10-21T03:13:56.9178402Z Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (26.2.1)
+checks	Run make setup build lint test	2026-10-21T03:13:57.0144371Z Collecting pip
+checks	Run make setup build lint test	2026-10-21T03:13:57.0825997Z   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:13:57.1056647Z Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+checks	Run make setup build lint test	2026-10-21T03:13:57.2054871Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 28.4 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:13:57.2268038Z Installing collected packages: pip
+checks	Run make setup build lint test	2026-10-21T03:13:57.2268896Z   Attempting uninstall: pip
+checks	Run make setup build lint test	2026-10-21T03:13:57.2287911Z     Found existing installation: pip 26.2.1
+checks	Run make setup build lint test	2026-10-21T03:13:57.2521685Z     Uninstalling pip-26.2.1:
+checks	Run make setup build lint test	2026-10-21T03:13:57.2567478Z       Successfully uninstalled pip-26.2.1
+checks	Run make setup build lint test	2026-10-21T03:13:57.9507181Z Successfully installed pip-26.2.2
+checks	Run make setup build lint test	2026-10-21T03:13:57.9908906Z .venv/bin/python -m pip install -e '.[dev]'
+checks	Run make setup build lint test	2026-10-21T03:13:58.2622149Z Obtaining file:///home/runner/work/meridian/meridian
+checks	Run make setup build lint test	2026-10-21T03:13:58.2633363Z   Installing build dependencies: started
+checks	Run make setup build lint test	2026-10-21T03:13:59.0226219Z   Installing build dependencies: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:13:59.0230282Z   Checking if build backend supports build_editable: started
+checks	Run make setup build lint test	2026-10-21T03:13:59.3341517Z   Checking if build backend supports build_editable: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:13:59.3346561Z   Getting requirements to build editable: started
+checks	Run make setup build lint test	2026-10-21T03:13:59.6280020Z   Getting requirements to build editable: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:13:59.6285685Z   Preparing editable metadata (pyproject.toml): started
+checks	Run make setup build lint test	2026-10-21T03:13:59.7854921Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:13:59.9042020Z Collecting fastapi==0.150.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:13:59.9901745Z   Downloading fastapi-0.150.0-py3-none-any.whl.metadata (26 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.0321401Z Collecting uvicorn==0.54.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.0511587Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.1653824Z Collecting websockets==17.3 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.1860533Z   Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.3386608Z Collecting numpy==2.5.4 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.3582062Z   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.3918495Z Collecting pytest==9.1.1 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.4124855Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.6428056Z Collecting hypothesis==6.170.5 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.6632240Z   Downloading hypothesis-6.170.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.6960524Z Collecting httpx==0.28.1 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.7150032Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:00.9428417Z Collecting ruff==0.17.1 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:00.9620727Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.0242557Z Collecting clang-format==23.1.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.0459186Z   Downloading clang_format-23.1.0-py2.py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.0763164Z Collecting pip-audit (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.0954546Z   Downloading pip_audit-2.10.1-py3-none-any.whl.metadata (28 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.1401702Z Collecting playwright==1.64.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.1609959Z   Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl.metadata (3.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.1949499Z Collecting starlette>=0.46.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.2165238Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.2968358Z Collecting pydantic>=2.9.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.3163288Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.3718235Z Collecting typing-extensions>=4.8.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.4103749Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.4367968Z Collecting typing-inspection>=0.4.2 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.4554090Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.4793928Z Collecting annotated-doc>=0.0.2 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.4991079Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.5294579Z Collecting opentelemetry-api>=1.44.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.5510138Z   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.5829383Z Collecting anyio (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.6018820Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.6524954Z Collecting certifi (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.6720106Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.6998701Z Collecting httpcore==1.* (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.7191640Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.7471303Z Collecting idna (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.7659867Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.7925837Z Collecting sortedcontainers<3.0.0,>=2.1.0 (from hypothesis==6.170.5->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.8115759Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.8393167Z Collecting pyee<15,>=13 (from playwright==1.64.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.8585768Z   Downloading pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:01.9666464Z Collecting greenlet<4.0.0,>=3.1.1 (from playwright==1.64.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:01.9859505Z   Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.0110909Z Collecting iniconfig>=1.0.1 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.0314821Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.0591163Z Collecting packaging>=22 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.0791363Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.1048872Z Collecting pluggy<2,>=1.5 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.1239722Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.1542993Z Collecting pygments>=2.7.2 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.1738088Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.2084152Z Collecting click>=7.0 (from uvicorn==0.54.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.2284151Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.2539800Z Collecting h11>=0.8 (from uvicorn==0.54.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.2730521Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.3036900Z Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.3253313Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.7860301Z Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.8072844Z   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.8431774Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.8637544Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.9012574Z Collecting cyclonedx-python-lib<12,>=5 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.9238121Z   Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl.metadata (6.9 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:02.9509329Z Collecting pip-api>=0.0.28 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:02.9741311Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.0004317Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.0326062Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.0638428Z Collecting requests>=2.31.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.0835498Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.1204653Z Collecting rich>=12.4 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.1396703Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.1764311Z Collecting tomli>=2.2.1 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.1963220Z   Downloading tomli-2.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.2209545Z Collecting tomli-w>=1.2.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.2400886Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.2738314Z Collecting platformdirs>=4.2.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.2939160Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.3214476Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.3404477Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.3709327Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.3899158Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.4176833Z Collecting py-serializable<3.0.0,>=2.1.0 (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.4415207Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.4698279Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.4902205Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.5164371Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.1.0->cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.5351471Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.6086834Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.6275008Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.6619939Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.6808491Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.6842961Z Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (from pip-api>=0.0.28->pip-audit->meridian-fusion==0.1.0) (26.2.2)
+checks	Run make setup build lint test	2026-10-21T03:14:03.7148213Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.7341506Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.8299264Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.8488844Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.8847282Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.9036127Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.9343373Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:03.9535716Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:03.9823093Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:14:04.0019244Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.0278452Z Downloading clang_format-23.1.0-py2.py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.0954052Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 35.1 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:04.1142291Z Downloading fastapi-0.150.0-py3-none-any.whl (145 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.1355941Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.1636000Z Downloading hypothesis-6.170.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.1787801Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 69.4 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:04.1980608Z Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.3407165Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 117.1 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:04.3603838Z Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl (48.3 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.7474696Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.3/48.3 MB 124.7 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:04.7667217Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.7907169Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.8778019Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 118.6 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:04.9005107Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.9217896Z Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.9435547Z Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (623 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.9486762Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 623.8/623.8 kB 112.1 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:04.9676945Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:04.9883270Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.0099690Z Downloading pyee-14.0.0-py3-none-any.whl (15 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.0342619Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.0561373Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.0773451Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.1049371Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.1256819Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.1460089Z Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.1685364Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.1898696Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.2170909Z Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.2551046Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 52.7 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:05.2838166Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.3053362Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.3166359Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 108.3 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:05.3366943Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.3591882Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.3801573Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.4023298Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.4249574Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.4500021Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.4706960Z Downloading pip_audit-2.10.1-py3-none-any.whl (62 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.4911561Z Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl (529 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.4966039Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.5/529.5 kB 72.8 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:14:05.5156883Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.5367847Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.5570523Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.5817929Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.6025597Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.6230527Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.6443462Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.6690192Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.6933444Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.7145270Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.7351598Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.7560720Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.7778121Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.7992852Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.8200201Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.8425040Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.8639337Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.8881147Z Downloading tomli-2.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (283 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.9131689Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:05.9344912Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+checks	Run make setup build lint test	2026-10-21T03:14:06.0908638Z Building wheels for collected packages: meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:14:06.0913810Z   Building editable for meridian-fusion (pyproject.toml): started
+checks	Run make setup build lint test	2026-10-21T03:14:15.0861407Z   Building editable for meridian-fusion (pyproject.toml): finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:14:15.0865628Z   Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-0.editable-cp313-cp313-linux_x86_64.whl size=2931 sha256=afd4da6e76b1f929504aee424d2c241666796bc4907fc42a16e9c7152c833e04
+checks	Run make setup build lint test	2026-10-21T03:14:15.0867763Z   Stored in directory: /tmp/pip-ephem-wheel-cache-kefd2tik/wheels/83/90/95/0031e6d4b5e530f1a5ef2d8037267aac5800eff84b79a71d93
+checks	Run make setup build lint test	2026-10-21T03:14:15.0878740Z Successfully built meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:14:15.1608140Z Installing collected packages: sortedcontainers, clang-format, boolean.py, websockets, urllib3, typing-extensions, tomli-w, tomli, ruff, pyparsing, pygments, pluggy, platformdirs, pip-api, packaging, packageurl-python, numpy, msgpack, mdurl, license-expression, iniconfig, idna, hypothesis, h11, greenlet, filelock, defusedxml, click, charset_normalizer, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, requests, pytest, pyee, pydantic-core, py-serializable, pip-requirements-parser, opentelemetry-api, markdown-it-py, httpcore, anyio, starlette, rich, pydantic, playwright, httpx, cyclonedx-python-lib, CacheControl, fastapi, pip-audit, meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:14:20.5003036Z 
+checks	Run make setup build lint test	2026-10-21T03:14:20.5044953Z Successfully installed CacheControl-0.14.4 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 clang-format-23.1.0 click-8.5.0 cyclonedx-python-lib-11.12.0 defusedxml-0.7.1 fastapi-0.150.0 filelock-4.2.4 greenlet-3.5.6 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 hypothesis-6.170.5 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 meridian-fusion-0.1.0 msgpack-1.2.3 numpy-2.5.4 opentelemetry-api-1.45.1 packageurl-python-0.17.6 packaging-26.3 pip-api-0.0.35 pip-audit-2.10.1 pip-requirements-parser-32.0.1 platformdirs-4.13.5 playwright-1.64.0 pluggy-1.7.0 py-serializable-2.1.0 pydantic-2.14.1 pydantic-core-2.50.1 pyee-14.0.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 starlette-1.9.0 tomli-2.5.0 tomli-w-1.2.0 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.54.0 websockets-17.3
+checks	Run make setup build lint test	2026-10-21T03:14:20.6914515Z npm ci --prefix apps/web
+checks	Run make setup build lint test	2026-10-21T03:14:21.8065609Z 
+checks	Run make setup build lint test	2026-10-21T03:14:21.8066352Z added 22 packages, and audited 23 packages in 1s
+checks	Run make setup build lint test	2026-10-21T03:14:21.8066728Z 
+checks	Run make setup build lint test	2026-10-21T03:14:21.8066922Z 5 packages are looking for funding
+checks	Run make setup build lint test	2026-10-21T03:14:21.8067286Z   run `npm fund` for details
+checks	Run make setup build lint test	2026-10-21T03:14:21.8073232Z 
+checks	Run make setup build lint test	2026-10-21T03:14:21.8073433Z found 0 vulnerabilities
+checks	Run make setup build lint test	2026-10-21T03:14:21.8263600Z .venv/bin/python setup.py build_ext --inplace
+checks	Run make setup build lint test	2026-10-21T03:14:21.8480341Z Traceback (most recent call last):
+checks	Run make setup build lint test	2026-10-21T03:14:21.8502146Z   File "/home/runner/work/meridian/meridian/setup.py", line 1, in <module>
+checks	Run make setup build lint test	2026-10-21T03:14:21.8502980Z     from pybind11.setup_helpers import Pybind11Extension
+checks	Run make setup build lint test	2026-10-21T03:14:21.8503555Z ModuleNotFoundError: No module named 'pybind11'
+checks	Run make setup build lint test	2026-10-21T03:14:21.8544339Z make: *** [Makefile:9: build] Error 1
+checks	Run make setup build lint test	2026-10-21T03:14:21.8560133Z ##[error]Process completed with exit code 2.

@@ -1,0 +1,6 @@
+{'late_packet_accepted': True, 'health': [{'buffered': 1, 'late': 0, 'overflow': 0, 'offset': 0.0}]}
+Traceback (most recent call last):
+  File "/Users/rajreddy/dev/outreach/flagships/meridian/scripts/failure_gate.py", line 16, in <module>
+    assert not accepted, "GATE FAILED: baseline admitted an event behind the committed watermark"
+           ^^^^^^^^^^^^
+AssertionError: GATE FAILED: baseline admitted an event behind the committed watermark

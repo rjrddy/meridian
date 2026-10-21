@@ -1,0 +1,2 @@
+{'late_packet_accepted': False, 'health': [{'buffered': 1, 'late': 1, 'overflow': 0, 'offset': 0.0}]}
+GATE PASSED: stale sample rejected before state mutation

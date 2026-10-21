@@ -1,0 +1,8 @@
+{
+  "command": "make lint test bench",
+  "exit_code": 0,
+  "started_unix": 1792552936.339547,
+  "elapsed_seconds": 3.685148239135742,
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]"
+}
