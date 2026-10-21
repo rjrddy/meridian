@@ -19,7 +19,7 @@ with sync_playwright() as p:
     page.get_by_role("button", name="Open console").click()
     page.get_by_role("heading", name="Signal overview.").wait_for()
     page.add_init_script(
-        """(() => {window.arrival=[];const Native=window.WebSocket;window.WebSocket=class extends Native {constructor(...args){super(...args);this.addEventListener('message', e=>{const p=JSON.parse(e.data);if(p.captured_at)window.arrival.push({capture:p.captured_at,arrival:Date.now()/1000,seq:p.seq});});}};})()"""
+        """(() => {window.arrival=[];const Native=window.WebSocket;window.WebSocket=class extends Native {constructor(...args){super(...args);this.addEventListener('message', e=>{const p=JSON.parse(e.data);if(p.captured_at)window.arrival.push({capture:p.captured_at,arrival:Date.now()/1000,seq:p.seq,samples:p.samples_total});});}};})()"""
     )
     # Reload reconnects through the instrumentation while preserving the authenticated cookie.
     page.reload()
@@ -46,7 +46,9 @@ with sync_playwright() as p:
         "boundary": "synthetic batch capture through local WebSocket browser message event; excludes paint; same machine wall clock",
         "configured_streams": 3,
         "configured_ticks_per_second": 50,
-        "configured_samples_per_second": 135,
+        "configured_source_rates_hz": [50, 25, 50 / 3],
+        "observed_samples_per_second": (raw[-1]["samples"] - raw[0]["samples"])
+        / (raw[-1]["capture"] - raw[0]["capture"]),
         "dropout": 0.1,
         "page_errors": errors,
         "desktop_overflow": desktop_overflow,

@@ -20,11 +20,12 @@ def events(
     for n in range(ticks):
         t = n * 0.02
         for i in range(streams):
-            if rng.random() >= dropout:
+            if n % (i + 1) == 0 and rng.random() >= dropout:
+                sample_time = t - rng.uniform(0, 0.004)
                 yield {
                     "kind": "sample",
                     "stream": i,
-                    "time": t + i * 0.137,
-                    "value": math.sin(t) + rng.gauss(0, 0.08 + i * 0.04),
+                    "time": sample_time + i * 0.137,
+                    "value": math.sin(sample_time) + rng.gauss(0, 0.08 + i * 0.04),
                 }
         yield {"kind": "tick", "time": t, "truth": math.sin(t)}

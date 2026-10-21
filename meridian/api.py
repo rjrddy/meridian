@@ -85,7 +85,7 @@ class Runtime:
 
     async def produce(self, run_id: str, config: Run) -> None:
         engine = Engine(config.streams)
-        batch, seq = [], 0
+        batch, seq, sample_count = [], 0, 0
         status = "complete"
         try:
             for event in events(**config.model_dump()):
@@ -93,6 +93,8 @@ class Runtime:
                     started = time.perf_counter_ns()
                     capture_wall = time.time()
                 batch.append(event)
+                if event["kind"] == "sample":
+                    sample_count += 1
                 frame = engine.apply(event)
                 if event["kind"] != "tick":
                     continue
@@ -106,6 +108,7 @@ class Runtime:
                     commit_ms=commit_ms,
                     sent_at=time.time(),
                     captured_at=capture_wall,
+                    samples_total=sample_count,
                     trace_id=run_id,
                 )
                 self.metrics["frames_total"] += 1
