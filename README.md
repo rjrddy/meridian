@@ -12,10 +12,10 @@ All figures below are derived by `scripts/render_readme.py` from saved output in
 
 | Measurement | Observed result | Raw evidence |
 |---|---|---|
-| Local unit/integration/property/chaos tests | 13 passed | [checks.log](docs/results/checks.log) |
+| Local unit/integration/property/chaos tests | 14 passed | [checks.log](docs/results/checks.log) |
 | Browser message-arrival latency, p50 / p99 | 1.329 / 3.136 ms | [browser.json](docs/results/browser.json), [raw samples](docs/results/browser-samples.json) |
 | Observed input rate during browser trial | 72.42 samples/s across 3 sources | [browser.json](docs/results/browser.json) |
-| Durable batch latency, p50 / p99 | 0.172 / 0.407 ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
+| Durable batch latency, p50 / p99 | 0.181 / 0.672 ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
 | Public sensor replay | 900 records; bit-identical: True | [public-replay.json](docs/results/public-replay.json) |
 | Synthetic test-station yield | 93.7% of 1000 units | [benchmark.json](docs/results/benchmark.json) |
 
@@ -23,9 +23,9 @@ Browser latency starts before the first event of each synthetic batch and ends a
 
 | Packet dropout | Scored ticks | RMSE, synthetic position units | Event p50 ms | Event p99 ms | Replay identical |
 |---|---|---|---|---|---|
-| 0% | 3000 | 0.048379 | 0.000292 | 0.003125 | True |
-| 10% | 3000 | 0.050149 | 0.000291 | 0.002875 | True |
-| 30% | 3000 | 0.051802 | 0.000292 | 0.002042 | True |
+| 0% | 3000 | 0.048471 | 0.000292 | 0.003333 | True |
+| 10% | 3000 | 0.050360 | 0.000292 | 0.002982 | True |
+| 30% | 3000 | 0.053657 | 0.000292 | 0.002125 | True |
 
 Raw events, estimates and timings: [nominal](docs/results/dropout-0.json), [degraded](docs/results/dropout-10.json), [stress](docs/results/dropout-30.json). The declared RMSE budget is checked by the benchmark command. Public lab temperatures have no shared ground truth: **public-data accuracy is not measured**.
 
@@ -62,7 +62,7 @@ Set your own password in the editor, then open http://localhost:8000 and sign in
 Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migration/meridian.md), [INTERVIEW.md](INTERVIEW.md) and [DRILL.md](docs/DRILL.md).
 
 - Explicit reference probes calibrate offsets; clock drift is not inferred. Causal hold avoids future leakage and ages stale sources out. Unequal source rates and timestamp jitter are synthetic.
-- Single scalar common coordinate, not a general multi-modal EKF. Held samples are correlated and can make posterior covariance optimistic; it is not a calibrated confidence interval. Ground-truth RMSE is measured separately.
+- Single scalar common coordinate, not a general multi-modal EKF. Each sample updates the filter at most once. Unmodeled cross-sensor correlation and physical dynamics mean posterior covariance is not a calibrated confidence interval. Ground-truth RMSE is measured separately.
 - One application process and one writer. No distributed consensus, horizontal write scaling or hardware real-time guarantee. Run replay is bit-identical on the tested numerical build; cross-platform bit identity is not claimed.
 - Authentication uses an environment password, salted scrypt, expiring server sessions, HttpOnly cookies, CSRF proofs and bounded login/write/viewer limits. Use TLS and COOKIE_SECURE for hosting. Roles, OAuth and external identity integration are absent.
 - Live viewer delivery may drop frames; recorded history is authoritative. The app bounds queues but transport buffers also exist. Disk retention and backup automation are not implemented.
@@ -72,4 +72,4 @@ Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migr
 
 ## Next
 
-Deploy with an explicitly chosen persistence policy; record the demo; add independently calibrated measurement correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.
+Deploy with an explicitly chosen persistence policy; record the demo; add independently calibrated cross-sensor correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.

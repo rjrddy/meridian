@@ -8,7 +8,7 @@ Answers refer to the actual implementation, not hypothetical deployed capabiliti
 4. Can a future sample influence an old tick? The buffer selection requires sample time at or before tick time. The no-future-leakage test covers it.
 5. Can a stream exhaust memory? Stream count and per-stream capacity are capped; overflow evicts oldest and increments a counter.
 6. Can history exhaust disk? Yes. There is no retention daemon yet. Run duration is bounded, but accumulated history needs a retention/backup policy.
-7. Is a repeated held sample independent information? No. The scalar model can become overconfident. Model temporal correlation or update only on new measurements before claiming calibrated confidence intervals.
+7. Is a repeated held sample independent information? No. The core tracks each source’s last consumed sample timestamp and updates only for a new observation. Cross-sensor correlation is still unmodeled, so no calibrated confidence interval is claimed.
 8. Why does dropout not stop output? The random-walk prediction continues without measurements and uncertainty increases.
 9. What breaks if you add API workers? Each worker could own independent active-run/session state. This deployment explicitly supports one process only.
 10. Could SQLite acknowledge an uncommitted frame? Runtime.produce awaits Store.append's transaction context before broadcasting.

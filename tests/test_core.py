@@ -63,3 +63,13 @@ def test_numerical_calibration_extremes():
         f.calibrate(0, 1e308, -1e308, 0.01)
     with pytest.raises(ValueError):
         f.calibrate(0, 0, 0, 1e-320)
+
+
+def test_held_observation_does_not_add_independent_information():
+    f = Fusion(1)
+    f.calibrate(0, 0, 0, 0.01)
+    f.ingest(0, 0, 1)
+    initial = f.tick(0)
+    held = f.tick(0.02)
+    assert held.active == 1 and held.estimate == initial.estimate
+    assert held.variance > initial.variance

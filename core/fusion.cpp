@@ -19,6 +19,7 @@ struct Stream {
   std::deque<Sample> buffer;
   double offset = 0, variance = 1,
          last = -std::numeric_limits<double>::infinity();
+  double used = -std::numeric_limits<double>::infinity();
   bool calibrated = false;
   std::uint64_t late = 0, overflow = 0;
 };
@@ -91,17 +92,20 @@ public:
         age = time - s.buffer.front().time;
         if (age <= max_age) {
           // Age inflates uncertainty; stale sources cannot retain full weight.
-          double w = 1.0 / (s.variance + process_noise * age);
-          weighted += s.buffer.front().value * w;
-          weights += w;
           ++active;
+          if (s.buffer.front().time > s.used) {
+            double w = 1.0 / (s.variance + process_noise * age);
+            weighted += s.buffer.front().value * w;
+            weights += w;
+            s.used = s.buffer.front().time;
+          }
         }
       }
       ages.push_back(age);
     }
     p += process_noise * dt;
     double measurement = 0;
-    if (active) {
+    if (weights > 0) {
       measurement = weighted / weights;
       double r = 1.0 / weights;
       if (!initialized) {

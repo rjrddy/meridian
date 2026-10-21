@@ -75,7 +75,7 @@ Set your own password in the editor, then open http://localhost:8000 and sign in
 Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migration/meridian.md), [INTERVIEW.md](INTERVIEW.md) and [DRILL.md](docs/DRILL.md).
 
 - Explicit reference probes calibrate offsets; clock drift is not inferred. Causal hold avoids future leakage and ages stale sources out. Unequal source rates and timestamp jitter are synthetic.
-- Single scalar common coordinate, not a general multi-modal EKF. Held samples are correlated and can make posterior covariance optimistic; it is not a calibrated confidence interval. Ground-truth RMSE is measured separately.
+- Single scalar common coordinate, not a general multi-modal EKF. Each sample updates the filter at most once. Unmodeled cross-sensor correlation and physical dynamics mean posterior covariance is not a calibrated confidence interval. Ground-truth RMSE is measured separately.
 - One application process and one writer. No distributed consensus, horizontal write scaling or hardware real-time guarantee. Run replay is bit-identical on the tested numerical build; cross-platform bit identity is not claimed.
 - Authentication uses an environment password, salted scrypt, expiring server sessions, HttpOnly cookies, CSRF proofs and bounded login/write/viewer limits. Use TLS and COOKIE_SECURE for hosting. Roles, OAuth and external identity integration are absent.
 - Live viewer delivery may drop frames; recorded history is authoritative. The app bounds queues but transport buffers also exist. Disk retention and backup automation are not implemented.
@@ -85,7 +85,7 @@ Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migr
 
 ## Next
 
-Deploy with an explicitly chosen persistence policy; record the demo; add independently calibrated measurement correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.
+Deploy with an explicitly chosen persistence policy; record the demo; add independently calibrated cross-sensor correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.
 """
 Path("README.md").write_text(text.replace("\n docker compose", "\ndocker compose"))
 print("README rendered from saved results")

@@ -30,7 +30,7 @@ Walk through core/fusion.cpp from calibration to ingest to tick. Show how the so
 2. What is the linearization point? SQLite transaction commit for persisted frame visibility. The C++ engine itself is single-owner, not concurrently linearizable across threads.
 3. Why not a full EKF? The implemented task is scalar shared-coordinate observation; an EKF would require additional dynamics and Jacobians justified by a real physical model.
 4. How do you handle clock drift? I do not estimate it. Reference calibration sets offset for the run; long-term drift is an explicit gap.
-5. Is the reported variance calibrated? No. The model reuses held observations, so correlation can make posterior covariance optimistic. Empirical RMSE is reported separately.
+5. Is the reported variance calibrated? No. An observation updates at most once. Unmodeled physical dynamics and cross-sensor correlation can still make covariance optimistic. Empirical RMSE is reported separately.
 6. Is replay bit-identical everywhere? Only demonstrated for the same build/runtime. Cross-platform floating-point identity is not promised.
 7. Does WebSocket delivery provide exactly-once semantics? No. Frames carry sequence numbers and skipped counts. The durable history is authoritative.
 8. What happens after a restart? SQLite preserves committed batches, unfinished runs become interrupted, and in-memory authentication sessions expire.
@@ -40,7 +40,7 @@ Walk through core/fusion.cpp from calibration to ingest to tick. Show how the so
 12. What does latency measure? Core event timing, first-input-through-SQLite batch timing and local browser message-arrival timing are separate artifacts. None establishes hard real-time scheduling.
 13. What does the public dataset prove? Parsing and replay compatibility on public lab temperatures. Different locations are not shared truth, so no public-data accuracy claim follows.
 14. How do you secure the demo? Environment secret, scrypt verifier, HttpOnly cookie, session-bound CSRF on writes and socket setup, request limits and bounded memory. Hosted TLS and persistence are operational requirements.
-15. What would you change first? Consume independent observations once or model measurement correlation, add calibrated drift probes and test hardware-clock latency under realistic load before optimizing kernels.
+15. What would you change first? Model cross-sensor measurement correlation, add calibrated drift probes and test hardware-clock latency under realistic load before optimizing kernels.
 
 ## Three more months
 
