@@ -49,8 +49,10 @@ public:
   void calibrate(int id, double sensor, double reference, double variance) {
     auto &s = streams.at(id);
     if (s.calibrated || !std::isfinite(sensor) || !std::isfinite(reference) ||
-        !std::isfinite(variance) || variance <= 0 || variance > 1e6)
+        !std::isfinite(variance) || variance < 1e-12 || variance > 1e6)
       throw std::invalid_argument("calibration");
+    if (!std::isfinite(sensor - reference))
+      throw std::invalid_argument("clock offset overflow");
     s.offset = sensor - reference;
     s.variance = variance;
     s.calibrated = true;

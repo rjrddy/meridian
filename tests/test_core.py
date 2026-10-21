@@ -55,3 +55,11 @@ def test_bounded_memory_and_finite_prediction(values):
         assert f.health()[0]["buffered"] <= 4
         frame = f.tick(float(n))
         assert math.isfinite(frame.estimate) and frame.variance >= 0
+
+
+def test_numerical_calibration_extremes():
+    f = Fusion(1)
+    with pytest.raises(ValueError):
+        f.calibrate(0, 1e308, -1e308, 0.01)
+    with pytest.raises(ValueError):
+        f.calibrate(0, 0, 0, 1e-320)

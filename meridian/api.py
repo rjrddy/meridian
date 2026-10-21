@@ -32,6 +32,12 @@ from meridian.station import measure, report
 from meridian.store import Store
 
 log = logging.getLogger("meridian")
+if not log.handlers:
+    handler = logging.StreamHandler()
+    handler.setFormatter(logging.Formatter("%(message)s"))
+    log.addHandler(handler)
+log.setLevel(logging.INFO)
+log.propagate = False
 
 
 class Login(BaseModel):
