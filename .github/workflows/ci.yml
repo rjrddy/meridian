@@ -25,5 +25,6 @@ jobs:
           trap 'docker compose logs' EXIT
           docker compose up --build -d --wait
           curl --fail http://localhost:8000/health
+          MERIDIAN_PASSWORD=replace-with-a-long-local-password "$GITHUB_WORKSPACE/.venv/bin/python" scripts/container_smoke.py
           docker compose logs > compose.log
           docker compose down
