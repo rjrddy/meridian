@@ -1,0 +1,22 @@
+[
+  {
+    "id": "P1",
+    "head": "5a2b6d20414e5a7ce79620a74aa1caf0ab615078",
+    "repo": "https://github.com/rjrddy/p1-sensor-fusion-replay"
+  },
+  {
+    "id": "R3",
+    "head": "2611b3868dfb1654eabb10948449c710d68b0afe",
+    "repo": "https://github.com/rjrddy/r3-demonstration-data-validator"
+  },
+  {
+    "id": "R4",
+    "head": "8680b7dd88e1f3fb3261ea6b1e47af503d1ad914",
+    "repo": "https://github.com/rjrddy/r4-test-station-measurement-logger"
+  },
+  {
+    "id": "X6",
+    "head": "bd5ba6e48898b29a40757d28245068c874d6ce1c",
+    "repo": "https://github.com/rjrddy/x6-dispatch-simulator"
+  }
+]

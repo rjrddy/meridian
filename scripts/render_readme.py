@@ -1,0 +1,91 @@
+"""Render factual result tables exclusively from saved measurements."""
+
+import json
+import re
+from pathlib import Path
+
+r = Path("docs/results")
+b = json.loads((r / "benchmark.json").read_text())
+w = json.loads((r / "browser.json").read_text())
+p = json.loads((r / "public-replay.json").read_text())
+n = re.search(r"(\d+) passed", (r / "checks.log").read_text()).group(1)
+rows = "\n".join(
+    f"| {x['dropout']:.0%} | {x['ticks']} | {x['rmse']:.6f} | {x['event_p50_ms']:.6f} | {x['event_p99_ms']:.6f} | {x['bit_identical']} |"
+    for x in b["dropout"]
+)
+text = f"""# Meridian
+
+## Problem
+
+Align noisy sensor streams without allowing late samples or slow viewers to rewrite committed history.
+
+**Status: partial — live deployment and a completed demo recording are outstanding.** Independent public repository: https://github.com/rjrddy/meridian.
+
+## Results
+
+All figures below are derived by `scripts/render_readme.py` from saved output in [docs/results](docs/results/). They describe this local machine and workload, not production guarantees.
+
+| Measurement | Observed result | Raw evidence |
+|---|---|---|
+| Local unit/integration/property/chaos tests | {n} passed | [checks.log](docs/results/checks.log) |
+| Browser message-arrival latency, p50 / p99 | {w["latency_p50_ms"]:.3f} / {w["latency_p99_ms"]:.3f} ms | [browser.json](docs/results/browser.json), [raw samples](docs/results/browser-samples.json) |
+| Observed input rate during browser trial | {w["observed_samples_per_second"]:.2f} samples/s across {w["configured_streams"]} sources | [browser.json](docs/results/browser.json) |
+| Durable batch latency, p50 / p99 | {b["durable"]["batch_p50_ms"]:.3f} / {b["durable"]["batch_p99_ms"]:.3f} ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
+| Public sensor replay | {p["records"]} records; bit-identical: {p["bit_identical"]} | [public-replay.json](docs/results/public-replay.json) |
+| Synthetic test-station yield | {b["station"]["yield_percent"]:.1f}% of {b["station"]["units"]} units | [benchmark.json](docs/results/benchmark.json) |
+
+Browser latency starts before the first event of each synthetic batch and ends at its WebSocket message handler on the same machine. It includes compute, SQLite commit and local delivery, but excludes paint and physical hardware capture. The run had configured source rates {", ".join(f"{x:.2f}" for x in w["configured_source_rates_hz"])} Hz, {w["dropout"]:.0%} packet dropout and {w["frames"]} received frames. These short trials do not establish a sustained service SLO. Durable batch timing excludes the browser. Core timings below measure individual adapter events without pacing or storage.
+
+| Packet dropout | Scored ticks | RMSE, synthetic position units | Event p50 ms | Event p99 ms | Replay identical |
+|---|---|---|---|---|---|
+{rows}
+
+Raw events, estimates and timings: [nominal](docs/results/dropout-0.json), [degraded](docs/results/dropout-10.json), [stress](docs/results/dropout-30.json). The declared RMSE budget is checked by the benchmark command. Public lab temperatures have no shared ground truth: **public-data accuracy is not measured**.
+
+Caught failures: [unsafe stale-packet baseline](docs/results/failure-unsafe.log) fails, while the [guarded core](docs/results/failure-guarded.log) rejects it. The [pre-fix dependency scan](docs/results/npm-audit-before-fix.json) blocked a vulnerable build dependency; [current frontend scan](docs/results/npm-audit.json) and [Python scan](docs/results/python-audit.json) retain the rescanned reports. Linux and fresh-install build failures were also retained before fixes. A real subprocess crash during an open SQLite transaction is tested in tests/test_chaos.py.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  S[Synthetic clocked sources / public replay] --> C[C++20 bounded buffers + watermark]
+  C --> K[Weighted measurement + scalar Kalman]
+  K --> A[Python single-owner API]
+  A --> D[(SQLite WAL event + frame transaction)]
+  D --> W[Bounded WebSocket viewer queues]
+  W --> U[React operations console]
+  D --> R[Canonical replay and hash comparison]
+  A --> T[Synthetic instrument station]
+```
+
+## Run it
+
+Docker Compose is required for the container path. From a clone:
+
+```sh
+cp .env.example .env
+$EDITOR .env
+ docker compose up --build
+```
+
+Set your own password in the editor, then open http://localhost:8000 and sign in. The image seeds a synthetic run and instrument batch. A named local volume preserves history; no remote account is needed. For native development: `make setup build`, set MERIDIAN_PASSWORD, then run `.venv/bin/uvicorn meridian.api:create_app --factory`. Reproduce proof with `make lint test bench`; browser verification requires a running server and Chromium. Download the public sensor archive separately from the [MIT source](https://db.csail.mit.edu/labdata/data.txt.gz) and run `.venv/bin/python scripts/public_replay.py /path/to/data.txt.gz`. No source archive is redistributed.
+
+## Decisions and limits
+
+Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migration/meridian.md), [INTERVIEW.md](INTERVIEW.md) and [DRILL.md](docs/DRILL.md).
+
+- Explicit reference probes calibrate offsets; clock drift is not inferred. Causal hold avoids future leakage and ages stale sources out. Unequal source rates and timestamp jitter are synthetic.
+- Single scalar common coordinate, not a general multi-modal EKF. Held samples are correlated and can make posterior covariance optimistic; it is not a calibrated confidence interval. Ground-truth RMSE is measured separately.
+- One application process and one writer. No distributed consensus, horizontal write scaling or hardware real-time guarantee. Run replay is bit-identical on the tested numerical build; cross-platform bit identity is not claimed.
+- Authentication uses an environment password, salted scrypt, expiring server sessions, HttpOnly cookies, CSRF proofs and bounded login/write/viewer limits. Use TLS and COOKIE_SECURE for hosting. Roles, OAuth and external identity integration are absent.
+- Live viewer delivery may drop frames; recorded history is authoritative. The app bounds queues but transport buffers also exist. Disk retention and backup automation are not implemented.
+- Public Intel Lab data is a replay compatibility exercise across different physical locations, not a truth-scored sensor-fusion benchmark. An explicit source reuse license was not identified, so fetch the archive separately. Source and archive checksum are saved.
+- Live demo: **not deployed**. The supplied free-tier Render configuration has ephemeral storage and must not be described as durable across redeploys. No hosting account was created.
+- Screenshots are saved, and [exact recording steps](docs/DEMO.md) are provided. A completed screen recording is not measured or claimed.
+
+## Next
+
+Deploy with an explicitly chosen persistence policy; record the demo; add independently calibrated measurement correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.
+"""
+Path("README.md").write_text(text.replace("\n docker compose", "\ndocker compose"))
+print("README rendered from saved results")
