@@ -16,6 +16,8 @@ COPY --from=web /app/apps/web/dist/ /app/apps/web/dist/
 # API resolves web assets relative to the installed package.
 RUN mkdir -p /usr/local/lib/python3.13/site-packages/apps/web && cp -r apps/web/dist /usr/local/lib/python3.13/site-packages/apps/web/
 RUN useradd --uid 10001 --create-home meridian && mkdir -p data && chown meridian:meridian data
+ENV MERIDIAN_DB=/app/data/meridian.sqlite
+WORKDIR /srv
 USER meridian
 EXPOSE 8000
-CMD ["sh", "-c", "python scripts/seed.py && uvicorn meridian.api:create_app --factory --host 0.0.0.0 --port ${PORT:-8000} --log-level info"]
+CMD ["sh", "-c", "python /app/scripts/seed.py && uvicorn meridian.api:create_app --factory --host 0.0.0.0 --port ${PORT:-8000} --log-level info"]
