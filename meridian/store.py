@@ -55,6 +55,11 @@ class Store:
             ).fetchall()
         return [dict(id=r[0], config=json.loads(r[1]), status=r[2], created=r[3]) for r in rows]
 
+    def get_run(self, run: str) -> dict | None:
+        with self.connect() as db:
+            row = db.execute("SELECT config,status FROM runs WHERE id=?", (run,)).fetchone()
+        return {"config": json.loads(row[0]), "status": row[1]} if row else None
+
     def batches(self, run: str) -> list[dict]:
         with self.connect() as db:
             rows = db.execute(

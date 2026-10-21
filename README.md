@@ -12,10 +12,10 @@ All figures below are derived by `scripts/render_readme.py` from saved output in
 
 | Measurement | Observed result | Raw evidence |
 |---|---|---|
-| Local unit/integration/property/chaos tests | 12 passed | [checks.log](docs/results/checks.log) |
+| Local unit/integration/property/chaos tests | 13 passed | [checks.log](docs/results/checks.log) |
 | Browser message-arrival latency, p50 / p99 | 1.329 / 3.136 ms | [browser.json](docs/results/browser.json), [raw samples](docs/results/browser-samples.json) |
 | Observed input rate during browser trial | 72.42 samples/s across 3 sources | [browser.json](docs/results/browser.json) |
-| Durable batch latency, p50 / p99 | 0.170 / 0.292 ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
+| Durable batch latency, p50 / p99 | 0.172 / 0.407 ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
 | Public sensor replay | 900 records; bit-identical: True | [public-replay.json](docs/results/public-replay.json) |
 | Synthetic test-station yield | 93.7% of 1000 units | [benchmark.json](docs/results/benchmark.json) |
 
@@ -23,9 +23,9 @@ Browser latency starts before the first event of each synthetic batch and ends a
 
 | Packet dropout | Scored ticks | RMSE, synthetic position units | Event p50 ms | Event p99 ms | Replay identical |
 |---|---|---|---|---|---|
-| 0% | 3000 | 0.048379 | 0.000291 | 0.003208 | True |
-| 10% | 3000 | 0.050149 | 0.000291 | 0.002834 | True |
-| 30% | 3000 | 0.051802 | 0.000292 | 0.002125 | True |
+| 0% | 3000 | 0.048379 | 0.000292 | 0.003125 | True |
+| 10% | 3000 | 0.050149 | 0.000291 | 0.002875 | True |
+| 30% | 3000 | 0.051802 | 0.000292 | 0.002042 | True |
 
 Raw events, estimates and timings: [nominal](docs/results/dropout-0.json), [degraded](docs/results/dropout-10.json), [stress](docs/results/dropout-30.json). The declared RMSE budget is checked by the benchmark command. Public lab temperatures have no shared ground truth: **public-data accuracy is not measured**.
 

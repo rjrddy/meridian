@@ -68,3 +68,27 @@ def test_unauthenticated_websocket_denied(client):
 
     with pytest.raises(WebSocketDisconnect), client.websocket_connect("/ws"):
         pass
+
+
+def test_old_history_replay_survives_recent_list_limit(client):
+    from meridian.engine import Engine
+    from meridian.simulation import events
+
+    sign_in(client)
+    store = client.app.state.runtime.store
+    store.create("old", {"streams": 3}, 0)
+    recorded = list(events(ticks=1))
+    engine = Engine()
+    for event in recorded:
+        frame = engine.apply(event)
+    store.append("old", 0, recorded, frame)
+    store.finish("old", "complete")
+    with store.connect() as db:
+        db.executemany(
+            "INSERT INTO runs VALUES (?,?,?,?)",
+            [(str(i), '{"streams":3}', "complete", i + 1) for i in range(101)],
+        )
+    assert "old" not in {r["id"] for r in store.runs()}
+    result = client.get("/api/runs/old/replay")
+    assert result.status_code == 200 and result.json()["identical"]
+    assert result.json()["frames"] == 1

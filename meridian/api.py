@@ -252,11 +252,11 @@ def create_app(path: str | None = None, password: str | None = None) -> FastAPI:
 
     @app.get("/api/runs/{run_id}/replay")
     def replay(run_id: str, authenticated: Secure) -> dict:
-        configs = {r["id"]: r for r in runtime.store.runs()}
-        if run_id not in configs:
+        recorded_run = runtime.store.get_run(run_id)
+        if recorded_run is None:
             raise HTTPException(404, "unknown run")
         rows = runtime.store.batches(run_id)
-        engine = Engine(configs[run_id]["config"]["streams"])
+        engine = Engine(recorded_run["config"]["streams"])
         original, reproduced = [], []
         for row in rows:
             frame = None
