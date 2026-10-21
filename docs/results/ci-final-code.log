@@ -1,0 +1,1060 @@
+checks	Set up job	﻿2026-10-21T03:22:26.2466450Z Current runner version: '2.338.0'
+checks	Set up job	2026-10-21T03:22:26.2486169Z ##[group]Runner Image Provisioner
+checks	Set up job	2026-10-21T03:22:26.2486779Z Hosted Compute Agent
+checks	Set up job	2026-10-21T03:22:26.2487122Z Version: 20261012.601
+checks	Set up job	2026-10-21T03:22:26.2487553Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+checks	Set up job	2026-10-21T03:22:26.2487981Z Build Date: 2026-10-12T17:48:21Z
+checks	Set up job	2026-10-21T03:22:26.2488408Z Worker ID: {404f1717-5b1f-4454-8ec5-cb95f3d0362f}
+checks	Set up job	2026-10-21T03:22:26.2488871Z Region: westus3
+checks	Set up job	2026-10-21T03:22:26.2489220Z Cloud: Azure
+checks	Set up job	2026-10-21T03:22:26.2489598Z ##[endgroup]
+checks	Set up job	2026-10-21T03:22:26.2490387Z ##[group]Operating System
+checks	Set up job	2026-10-21T03:22:26.2490922Z Ubuntu
+checks	Set up job	2026-10-21T03:22:26.2491283Z 26.04.1
+checks	Set up job	2026-10-21T03:22:26.2491594Z LTS
+checks	Set up job	2026-10-21T03:22:26.2491941Z ##[endgroup]
+checks	Set up job	2026-10-21T03:22:26.2492275Z ##[group]Runner Image
+checks	Set up job	2026-10-21T03:22:26.2492632Z Image: ubuntu-26.04
+checks	Set up job	2026-10-21T03:22:26.2493054Z Version: 20261012.163.1
+checks	Set up job	2026-10-21T03:22:26.2493876Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261012.163/images/ubuntu/Ubuntu2604-Readme.md
+checks	Set up job	2026-10-21T03:22:26.2494950Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261012.163
+checks	Set up job	2026-10-21T03:22:26.2495527Z ##[endgroup]
+checks	Set up job	2026-10-21T03:22:26.2496291Z ##[group]GITHUB_TOKEN Permissions
+checks	Set up job	2026-10-21T03:22:26.2497910Z Contents: read
+checks	Set up job	2026-10-21T03:22:26.2498281Z Metadata: read
+checks	Set up job	2026-10-21T03:22:26.2498621Z ##[endgroup]
+checks	Set up job	2026-10-21T03:22:26.2500361Z Secret source: Actions
+checks	Set up job	2026-10-21T03:22:26.2501157Z Cache mode: write
+checks	Set up job	2026-10-21T03:22:26.2501675Z Prepare workflow directory
+checks	Set up job	2026-10-21T03:22:26.2722262Z Prepare all required actions
+checks	Set up job	2026-10-21T03:22:26.2754732Z Getting action download info
+checks	Set up job	2026-10-21T03:22:26.5582744Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+checks	Set up job	2026-10-21T03:22:26.7807721Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+checks	Set up job	2026-10-21T03:22:27.0158642Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+checks	Set up job	2026-10-21T03:22:27.6033511Z Complete job name: checks
+checks	Run actions/checkout@v4	﻿2026-10-21T03:22:27.6558343Z ##[group]Run actions/checkout@v4
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6558832Z with:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6559085Z   repository: rjrddy/meridian
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6561341Z   token: ***
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6561591Z   ssh-strict: true
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6561842Z   ssh-user: git
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6562097Z   persist-credentials: true
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6562378Z   clean: true
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6562630Z   sparse-checkout-cone-mode: true
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6562931Z   fetch-depth: 1
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6563178Z   fetch-tags: false
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6563430Z   show-progress: true
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6563681Z   lfs: false
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6563915Z   submodules: false
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6564189Z   set-safe-directory: true
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6564480Z   allow-unsafe-pr-checkout: false
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.6564853Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7271985Z Syncing repository: rjrddy/meridian
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7273666Z ##[group]Getting Git version info
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7274333Z Working directory is '/home/runner/work/meridian/meridian'
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7275503Z [command]/usr/bin/git version
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7303158Z git version 2.55.0
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7316501Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7336179Z Temporarily overriding HOME='/home/runner/work/_temp/fcf731f3-0bc6-4ac5-93f6-4e5ddb64bca0' before making global git config changes
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7337544Z Adding repository directory to the temporary git global config as a safe directory
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7339380Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/meridian/meridian
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7419312Z Deleting the contents of '/home/runner/work/meridian/meridian'
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7423333Z ##[group]Initializing the repository
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7427178Z [command]/usr/bin/git init /home/runner/work/meridian/meridian
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7711420Z hint: Using 'master' as the name for the initial branch. This default branch name
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7712991Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7713864Z hint: to use in all of your new repositories, which will suppress this warning,
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7714551Z hint: call:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7714914Z hint:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7715433Z hint: 	git config --global init.defaultBranch <name>
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7715993Z hint:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7716510Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7717350Z hint: 'development'. The just-created branch can be renamed via this command:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7718013Z hint:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7718381Z hint: 	git branch -m <name>
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7718800Z hint:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7719360Z hint: Disable this message with "git config set advice.defaultBranchName false"
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7732033Z Initialized empty Git repository in /home/runner/work/meridian/meridian/.git/
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7733870Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/meridian
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7811518Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7812597Z ##[group]Disabling automatic garbage collection
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7813344Z [command]/usr/bin/git config --local gc.auto 0
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7994539Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.7995324Z ##[group]Setting up auth
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8000588Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8032662Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8384994Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8414157Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8644065Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8673925Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8906307Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8995773Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.8996624Z ##[group]Fetching the repository
+checks	Run actions/checkout@v4	2026-10-21T03:22:27.9003499Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +17c38e36928554368bc509575845565754d6d3fb:refs/remotes/origin/main
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.3861541Z From https://github.com/rjrddy/meridian
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.3862825Z  * [new ref]         17c38e36928554368bc509575845565754d6d3fb -> origin/main
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.3865643Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.3866586Z ##[group]Determining the checkout info
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.3867825Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.3872082Z [command]/usr/bin/git sparse-checkout disable
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.4175655Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.4564840Z ##[group]Checking out the ref
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.4568845Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.5554228Z Switched to a new branch 'main'
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.5557977Z branch 'main' set up to track 'origin/main'.
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.5582385Z ##[endgroup]
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.5620177Z [command]/usr/bin/git log -1 --format=%H
+checks	Run actions/checkout@v4	2026-10-21T03:22:28.5646027Z 17c38e36928554368bc509575845565754d6d3fb
+checks	Run actions/setup-python@v5	﻿2026-10-21T03:22:28.6101463Z ##[group]Run actions/setup-python@v5
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6102277Z with:
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6102836Z   python-version: 3.13
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6103466Z   check-latest: false
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6109346Z   token: ***
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6109937Z   update-environment: true
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6110599Z   allow-prereleases: false
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6111487Z   freethreaded: false
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.6112085Z ##[endgroup]
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.7172100Z ##[group]Installed versions
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.7303759Z (node:2155) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.7306373Z (Use `node --trace-deprecation ...` to show where the warning was created)
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.7307910Z Successfully set up CPython (3.13.16)
+checks	Run actions/setup-python@v5	2026-10-21T03:22:28.7309548Z ##[endgroup]
+checks	Run actions/setup-node@v4	﻿2026-10-21T03:22:28.7671045Z ##[group]Run actions/setup-node@v4
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7671837Z with:
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7672369Z   node-version: 22
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7672935Z   cache: npm
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7673593Z   cache-dependency-path: apps/web/package-lock.json
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7674429Z   always-auth: false
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7675026Z   check-latest: false
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7680797Z   token: ***
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7681386Z env:
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7682054Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7683200Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7684318Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7685321Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7686330Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7687348Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.7688214Z ##[endgroup]
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.8791552Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.8794760Z (node:2166) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.8797308Z (Use `node --trace-deprecation ...` to show where the warning was created)
+checks	Run actions/setup-node@v4	2026-10-21T03:22:28.8799438Z ##[group]Environment details
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.2598032Z node: v22.23.3
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.2600085Z npm: 10.9.9
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.2601162Z yarn: 1.22.22
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.2602978Z ##[endgroup]
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.2631789Z [command]/opt/hostedtoolcache/node/22.23.3/x64/bin/npm config get cache
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.3707930Z /home/runner/.npm
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.5902478Z Cache hit for: node-cache-Linux-x64-npm-76542b789693cdd29e0210de8c6e460c2f9cc89367dd2c2a9816ea447da99661
+checks	Run actions/setup-node@v4	2026-10-21T03:22:29.5978657Z (node:2166) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+checks	Run actions/setup-node@v4	2026-10-21T03:22:30.4973917Z Received 14276344 of 14276344 (100.0%), 20.0 MBs/sec
+checks	Run actions/setup-node@v4	2026-10-21T03:22:30.4974662Z Cache Size: ~14 MB (14276344 B)
+checks	Run actions/setup-node@v4	2026-10-21T03:22:30.4990317Z [command]/usr/bin/tar -xf /home/runner/work/_temp/06b4fba2-0dcb-4998-9ba4-5975392a0cba/cache.tzst -P -C /home/runner/work/meridian/meridian --use-compress-program unzstd
+checks	Run actions/setup-node@v4	2026-10-21T03:22:30.5224746Z Cache restored successfully
+checks	Run actions/setup-node@v4	2026-10-21T03:22:30.5235229Z Cache restored from key: node-cache-Linux-x64-npm-76542b789693cdd29e0210de8c6e460c2f9cc89367dd2c2a9816ea447da99661
+checks	Run make setup build lint test	﻿2026-10-21T03:22:30.5877837Z ##[group]Run make setup build lint test
+checks	Run make setup build lint test	2026-10-21T03:22:30.5878143Z ^[[36;1mmake setup build lint test^[[0m
+checks	Run make setup build lint test	2026-10-21T03:22:30.6038952Z shell: /usr/bin/bash -e {0}
+checks	Run make setup build lint test	2026-10-21T03:22:30.6039242Z env:
+checks	Run make setup build lint test	2026-10-21T03:22:30.6039438Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:22:30.6039729Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+checks	Run make setup build lint test	2026-10-21T03:22:30.6039988Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:22:30.6040215Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:22:30.6040496Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run make setup build lint test	2026-10-21T03:22:30.6040869Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+checks	Run make setup build lint test	2026-10-21T03:22:30.6041093Z ##[endgroup]
+checks	Run make setup build lint test	2026-10-21T03:22:30.6513892Z python3 -m venv .venv
+checks	Run make setup build lint test	2026-10-21T03:22:33.8001788Z .venv/bin/python -m pip install --upgrade pip
+checks	Run make setup build lint test	2026-10-21T03:22:34.0137023Z Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (26.2.1)
+checks	Run make setup build lint test	2026-10-21T03:22:34.0816564Z Collecting pip
+checks	Run make setup build lint test	2026-10-21T03:22:34.1298704Z   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:34.1434534Z Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:34.1947665Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 62.9 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:34.2133013Z Installing collected packages: pip
+checks	Run make setup build lint test	2026-10-21T03:22:34.2133518Z   Attempting uninstall: pip
+checks	Run make setup build lint test	2026-10-21T03:22:34.2149848Z     Found existing installation: pip 26.2.1
+checks	Run make setup build lint test	2026-10-21T03:22:34.2346817Z     Uninstalling pip-26.2.1:
+checks	Run make setup build lint test	2026-10-21T03:22:34.2389528Z       Successfully uninstalled pip-26.2.1
+checks	Run make setup build lint test	2026-10-21T03:22:34.7970628Z Successfully installed pip-26.2.2
+checks	Run make setup build lint test	2026-10-21T03:22:34.8459684Z .venv/bin/python -m pip install -e '.[dev]'
+checks	Run make setup build lint test	2026-10-21T03:22:35.0851897Z Obtaining file:///home/runner/work/meridian/meridian
+checks	Run make setup build lint test	2026-10-21T03:22:35.0861939Z   Installing build dependencies: started
+checks	Run make setup build lint test	2026-10-21T03:22:35.6167286Z   Installing build dependencies: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:35.6171240Z   Checking if build backend supports build_editable: started
+checks	Run make setup build lint test	2026-10-21T03:22:35.9341783Z   Checking if build backend supports build_editable: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:35.9349447Z   Getting requirements to build editable: started
+checks	Run make setup build lint test	2026-10-21T03:22:36.1975401Z   Getting requirements to build editable: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:36.1981140Z   Preparing editable metadata (pyproject.toml): started
+checks	Run make setup build lint test	2026-10-21T03:22:36.3390905Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:36.4156884Z Collecting fastapi==0.150.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:36.4632261Z   Downloading fastapi-0.150.0-py3-none-any.whl.metadata (26 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:36.4905208Z Collecting uvicorn==0.54.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:36.5004364Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:36.5818376Z Collecting websockets==17.3 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:36.5924155Z   Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:36.7288225Z Collecting numpy==2.5.4 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:36.7395199Z   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:36.7632010Z Collecting pytest==9.1.1 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:36.7732634Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:36.9585767Z Collecting hypothesis==6.170.5 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:36.9688771Z   Downloading hypothesis-6.170.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:36.9908999Z Collecting httpx==0.28.1 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.0008594Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.1863872Z Collecting ruff==0.17.1 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.1981623Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.2421609Z Collecting clang-format==23.1.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.2537656Z   Downloading clang_format-23.1.0-py2.py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.2727695Z Collecting pip-audit (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.2830431Z   Downloading pip_audit-2.10.1-py3-none-any.whl.metadata (28 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.3139461Z Collecting playwright==1.64.0 (from meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.3242324Z   Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl.metadata (3.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.3468351Z Collecting starlette>=0.46.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.3567951Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.4195670Z Collecting pydantic>=2.9.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.4299621Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.4624145Z Collecting typing-extensions>=4.8.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.4723090Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.4881027Z Collecting typing-inspection>=0.4.2 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.4980985Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.5136294Z Collecting annotated-doc>=0.0.2 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.5238397Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.5443098Z Collecting opentelemetry-api>=1.44.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.5542381Z   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.5763572Z Collecting anyio (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.5862896Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.6562201Z Collecting certifi (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.6668169Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.6853672Z Collecting httpcore==1.* (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.6951577Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.7131295Z Collecting idna (from httpx==0.28.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.7229799Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.7403860Z Collecting sortedcontainers<3.0.0,>=2.1.0 (from hypothesis==6.170.5->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.7506407Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.7701913Z Collecting pyee<15,>=13 (from playwright==1.64.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.7801961Z   Downloading pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.8739359Z Collecting greenlet<4.0.0,>=3.1.1 (from playwright==1.64.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.8846883Z   Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9011469Z Collecting iniconfig>=1.0.1 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9110416Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9289702Z Collecting packaging>=22 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9401681Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9573332Z Collecting pluggy<2,>=1.5 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9676780Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9871219Z Collecting pygments>=2.7.2 (from pytest==9.1.1->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:37.9970095Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.0212799Z Collecting click>=7.0 (from uvicorn==0.54.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.0314513Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.0477127Z Collecting h11>=0.8 (from uvicorn==0.54.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.0578587Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.0777466Z Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.0876666Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.4490046Z Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.4597735Z   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.4820563Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.4918713Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.5173500Z Collecting cyclonedx-python-lib<12,>=5 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.5275779Z   Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl.metadata (6.9 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.5477572Z Collecting pip-api>=0.0.28 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.5577083Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.5915045Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.6014898Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.6222779Z Collecting requests>=2.31.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.6330004Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.6585014Z Collecting rich>=12.4 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.6689884Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.6941214Z Collecting tomli>=2.2.1 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7041128Z   Downloading tomli-2.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7199803Z Collecting tomli-w>=1.2.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7298122Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7502784Z Collecting platformdirs>=4.2.0 (from pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7601229Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7865069Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.7962947Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8152578Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8249208Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8426405Z Collecting py-serializable<3.0.0,>=2.1.0 (from cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8524313Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8704801Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8803297Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.8972868Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.1.0->cyclonedx-python-lib<12,>=5->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.9072878Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.9628535Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:38.9729572Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:38.9963760Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:39.0065572Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.0099867Z Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (from pip-api>=0.0.28->pip-audit->meridian-fusion==0.1.0) (26.2.2)
+checks	Run make setup build lint test	2026-10-21T03:22:39.0319793Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:39.0419108Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.1159594Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:39.1259221Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.1487650Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:39.1585193Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.1852460Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:39.1951263Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.2125861Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit->meridian-fusion==0.1.0)
+checks	Run make setup build lint test	2026-10-21T03:22:39.2225561Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.2388724Z Downloading clang_format-23.1.0-py2.py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.2774919Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 59.9 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:39.2878715Z Downloading fastapi-0.150.0-py3-none-any.whl (145 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.2997043Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.3114464Z Downloading hypothesis-6.170.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.3186869Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 166.7 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:39.3287746Z Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.4615349Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 125.8 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:39.4724353Z Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl (48.3 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.8237392Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.3/48.3 MB 137.5 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:39.8343913Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.8469393Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.9173966Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 147.3 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:39.9274644Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.9409688Z Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.9541097Z Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (623 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.9582523Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 623.8/623.8 kB 140.8 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:39.9683660Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.9803669Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:39.9922341Z Downloading pyee-14.0.0-py3-none-any.whl (15 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0175378Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0294731Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0413191Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0535480Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0650948Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0767575Z Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.0883887Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1003080Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1138685Z Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1237118Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 229.4 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:40.1337156Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1453184Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1506726Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 267.4 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:40.1607304Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1737770Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.1858642Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2133381Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2248228Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2363315Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2482094Z Downloading pip_audit-2.10.1-py3-none-any.whl (62 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2597945Z Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl (529 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2636454Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.5/529.5 kB 122.1 MB/s  0:00:00
+checks	Run make setup build lint test	2026-10-21T03:22:40.2734831Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2850138Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.2963208Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3074359Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3186842Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3312506Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3437939Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3563880Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3683994Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.3822821Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4059533Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4229057Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4397035Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4534493Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4652664Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4778119Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.4895618Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.5016886Z Downloading tomli-2.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (283 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.5140991Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.5256221Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+checks	Run make setup build lint test	2026-10-21T03:22:40.6514323Z Building wheels for collected packages: meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:22:40.6518720Z   Building editable for meridian-fusion (pyproject.toml): started
+checks	Run make setup build lint test	2026-10-21T03:22:47.0273605Z   Building editable for meridian-fusion (pyproject.toml): finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:47.0277174Z   Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-0.editable-cp313-cp313-linux_x86_64.whl size=2931 sha256=06127b11f9ea967193051ecd536450df2619d2e53f3b9ce4b4b102b940180fef
+checks	Run make setup build lint test	2026-10-21T03:22:47.0278411Z   Stored in directory: /tmp/pip-ephem-wheel-cache-99l68m9w/wheels/83/90/95/0031e6d4b5e530f1a5ef2d8037267aac5800eff84b79a71d93
+checks	Run make setup build lint test	2026-10-21T03:22:47.0289303Z Successfully built meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:22:47.0859440Z Installing collected packages: sortedcontainers, clang-format, boolean.py, websockets, urllib3, typing-extensions, tomli-w, tomli, ruff, pyparsing, pygments, pluggy, platformdirs, pip-api, packaging, packageurl-python, numpy, msgpack, mdurl, license-expression, iniconfig, idna, hypothesis, h11, greenlet, filelock, defusedxml, click, charset_normalizer, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, requests, pytest, pyee, pydantic-core, py-serializable, pip-requirements-parser, opentelemetry-api, markdown-it-py, httpcore, anyio, starlette, rich, pydantic, playwright, httpx, cyclonedx-python-lib, CacheControl, fastapi, pip-audit, meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:22:52.3750254Z 
+checks	Run make setup build lint test	2026-10-21T03:22:52.3784883Z Successfully installed CacheControl-0.14.4 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 clang-format-23.1.0 click-8.5.0 cyclonedx-python-lib-11.12.0 defusedxml-0.7.1 fastapi-0.150.0 filelock-4.2.4 greenlet-3.5.6 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 hypothesis-6.170.5 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 meridian-fusion-0.1.0 msgpack-1.2.3 numpy-2.5.4 opentelemetry-api-1.45.1 packageurl-python-0.17.6 packaging-26.3 pip-api-0.0.35 pip-audit-2.10.1 pip-requirements-parser-32.0.1 platformdirs-4.13.5 playwright-1.64.0 pluggy-1.7.0 py-serializable-2.1.0 pydantic-2.14.1 pydantic-core-2.50.1 pyee-14.0.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 starlette-1.9.0 tomli-2.5.0 tomli-w-1.2.0 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.54.0 websockets-17.3
+checks	Run make setup build lint test	2026-10-21T03:22:52.7365247Z npm ci --prefix apps/web
+checks	Run make setup build lint test	2026-10-21T03:22:53.5543160Z 
+checks	Run make setup build lint test	2026-10-21T03:22:53.5543962Z added 22 packages, and audited 23 packages in 779ms
+checks	Run make setup build lint test	2026-10-21T03:22:53.5544188Z 
+checks	Run make setup build lint test	2026-10-21T03:22:53.5544299Z 5 packages are looking for funding
+checks	Run make setup build lint test	2026-10-21T03:22:53.5544491Z   run `npm fund` for details
+checks	Run make setup build lint test	2026-10-21T03:22:53.5548670Z 
+checks	Run make setup build lint test	2026-10-21T03:22:53.5548782Z found 0 vulnerabilities
+checks	Run make setup build lint test	2026-10-21T03:22:53.5755175Z .venv/bin/python -m pip install --no-deps -e .
+checks	Run make setup build lint test	2026-10-21T03:22:53.8092343Z Obtaining file:///home/runner/work/meridian/meridian
+checks	Run make setup build lint test	2026-10-21T03:22:53.8104671Z   Installing build dependencies: started
+checks	Run make setup build lint test	2026-10-21T03:22:54.2457930Z   Installing build dependencies: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:54.2461840Z   Checking if build backend supports build_editable: started
+checks	Run make setup build lint test	2026-10-21T03:22:54.4584718Z   Checking if build backend supports build_editable: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:54.4590138Z   Getting requirements to build editable: started
+checks	Run make setup build lint test	2026-10-21T03:22:54.7142918Z   Getting requirements to build editable: finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:54.7148278Z   Preparing editable metadata (pyproject.toml): started
+checks	Run make setup build lint test	2026-10-21T03:22:54.8638378Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:22:54.8680169Z Building wheels for collected packages: meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:22:54.8684843Z   Building editable for meridian-fusion (pyproject.toml): started
+checks	Run make setup build lint test	2026-10-21T03:23:00.8311804Z   Building editable for meridian-fusion (pyproject.toml): finished with status 'done'
+checks	Run make setup build lint test	2026-10-21T03:23:00.8316072Z   Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-0.editable-cp313-cp313-linux_x86_64.whl size=2931 sha256=58b9c1111ed0fd9ff228df1cdb497c0391e319323efaf262a85bf1982f77f1ef
+checks	Run make setup build lint test	2026-10-21T03:23:00.8317137Z   Stored in directory: /tmp/pip-ephem-wheel-cache-j_h2kypw/wheels/83/90/95/0031e6d4b5e530f1a5ef2d8037267aac5800eff84b79a71d93
+checks	Run make setup build lint test	2026-10-21T03:23:00.8332754Z Successfully built meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:23:00.8409109Z Installing collected packages: meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:23:00.8410007Z   Attempting uninstall: meridian-fusion
+checks	Run make setup build lint test	2026-10-21T03:23:00.8429343Z     Found existing installation: meridian-fusion 0.1.0
+checks	Run make setup build lint test	2026-10-21T03:23:00.8440493Z     Uninstalling meridian-fusion-0.1.0:
+checks	Run make setup build lint test	2026-10-21T03:23:00.8631636Z       Successfully uninstalled meridian-fusion-0.1.0
+checks	Run make setup build lint test	2026-10-21T03:23:00.8754011Z Successfully installed meridian-fusion-0.1.0
+checks	Run make setup build lint test	2026-10-21T03:23:00.9324309Z npm run build --prefix apps/web
+checks	Run make setup build lint test	2026-10-21T03:23:00.9990180Z 
+checks	Run make setup build lint test	2026-10-21T03:23:00.9990995Z > meridian-console@0.1.0 build
+checks	Run make setup build lint test	2026-10-21T03:23:00.9991342Z > tsc --noEmit && vite build
+checks	Run make setup build lint test	2026-10-21T03:23:00.9991487Z 
+checks	Run make setup build lint test	2026-10-21T03:23:01.9950148Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+checks	Run make setup build lint test	2026-10-21T03:23:02.0512338Z transforming...
+checks	Run make setup build lint test	2026-10-21T03:23:02.5982770Z ^[[32m✓^[[39m 28 modules transformed.
+checks	Run make setup build lint test	2026-10-21T03:23:02.6905167Z rendering chunks...
+checks	Run make setup build lint test	2026-10-21T03:23:02.6950548Z computing gzip size...
+checks	Run make setup build lint test	2026-10-21T03:23:02.7027384Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.41 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.29 kB^[[22m
+checks	Run make setup build lint test	2026-10-21T03:23:02.7028849Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-BhneZbza.css  ^[[39m^[[1m^[[2m  7.10 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  2.26 kB^[[22m
+checks	Run make setup build lint test	2026-10-21T03:23:02.7029907Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-DZOzr5Wq.js   ^[[39m^[[1m^[[2m204.64 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 64.26 kB^[[22m
+checks	Run make setup build lint test	2026-10-21T03:23:02.7030644Z ^[[32m✓ built in 690ms^[[39m
+checks	Run make setup build lint test	2026-10-21T03:23:02.7321358Z .venv/bin/python -m ruff check meridian tests benchmarks scripts setup.py
+checks	Run make setup build lint test	2026-10-21T03:23:02.7589321Z All checks passed!
+checks	Run make setup build lint test	2026-10-21T03:23:02.7590027Z .venv/bin/python -m ruff format --check meridian tests benchmarks scripts setup.py
+checks	Run make setup build lint test	2026-10-21T03:23:02.7847830Z 18 files already formatted
+checks	Run make setup build lint test	2026-10-21T03:23:02.7853045Z .venv/bin/clang-format --dry-run --Werror core/fusion.cpp
+checks	Run make setup build lint test	2026-10-21T03:23:02.8167554Z npm run lint --prefix apps/web
+checks	Run make setup build lint test	2026-10-21T03:23:02.8858116Z 
+checks	Run make setup build lint test	2026-10-21T03:23:02.8858821Z > meridian-console@0.1.0 lint
+checks	Run make setup build lint test	2026-10-21T03:23:02.8859087Z > tsc --noEmit
+checks	Run make setup build lint test	2026-10-21T03:23:02.8859182Z 
+checks	Run make setup build lint test	2026-10-21T03:23:03.6797383Z .venv/bin/python -m pytest -q
+checks	Run make setup build lint test	2026-10-21T03:23:07.2221921Z ..............                                                           [100%]
+checks	Run make setup build lint test	2026-10-21T03:23:07.2222531Z =============================== warnings summary ===============================
+checks	Run make setup build lint test	2026-10-21T03:23:07.2222996Z .venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+checks	Run make setup build lint test	2026-10-21T03:23:07.2223974Z   /home/runner/work/meridian/meridian/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+checks	Run make setup build lint test	2026-10-21T03:23:07.2224894Z     from starlette.testclient import TestClient as TestClient  # noqa
+checks	Run make setup build lint test	2026-10-21T03:23:07.2225156Z 
+checks	Run make setup build lint test	2026-10-21T03:23:07.2225421Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+checks	Run make setup build lint test	2026-10-21T03:23:07.2225838Z 14 passed, 1 warning in 2.18s
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	﻿2026-10-21T03:23:07.3823397Z ##[group]Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3823802Z ^[[36;1m.venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high^[[0m
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3877143Z shell: /usr/bin/bash -e {0}
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3877320Z env:
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3877487Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3877748Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3878004Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3878232Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3878470Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3878704Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:07.3878897Z ##[endgroup]
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:08.3231649Z No known vulnerabilities found
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:08.3240282Z Name            Skip Reason
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:08.3241050Z --------------- ------------------------------------------------------------------------------
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:08.3241656Z meridian-fusion Dependency not found on PyPI and could not be audited: meridian-fusion (0.1.0)
+checks	Run .venv/bin/python -m pip_audit && npm audit --prefix apps/web --audit-level=high	2026-10-21T03:23:08.6722062Z found 0 vulnerabilities
+checks	Fresh clone Compose smoke	﻿2026-10-21T03:23:08.6821028Z ##[group]Run git clone --no-local . /tmp/meridian-clean
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6821320Z ^[[36;1mgit clone --no-local . /tmp/meridian-clean^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6821505Z ^[[36;1mcd /tmp/meridian-clean^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6821660Z ^[[36;1mcp .env.example .env^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6821819Z ^[[36;1mtrap 'docker compose logs' EXIT^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6821995Z ^[[36;1mdocker compose up --build -d --wait^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6822199Z ^[[36;1mcurl --fail http://localhost:8000/health^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6822552Z ^[[36;1mMERIDIAN_PASSWORD=replace-with-a-long-local-password "$GITHUB_WORKSPACE/.venv/bin/python" scripts/container_smoke.py^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6823020Z ^[[36;1mdocker compose logs > compose.log^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6823185Z ^[[36;1mdocker compose down^[[0m
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6876905Z shell: /usr/bin/bash -e {0}
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6877082Z env:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6877247Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6877499Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6877798Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6878024Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6878258Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6878484Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6878672Z ##[endgroup]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:08.6961387Z Cloning into '/tmp/meridian-clean'...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.1733702Z  Image meridian-clean-meridian Building 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.2442596Z #1 [internal] load local bake definitions
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.3451809Z #1 reading from stdin 512B done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.3452216Z #1 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.3452334Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.3452525Z #2 [internal] load build definition from Dockerfile
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.3452852Z #2 transferring dockerfile:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.5184922Z #2 transferring dockerfile: 1.06kB done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.5185238Z #2 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.5185361Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.5185536Z #3 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6963817Z #3 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6964064Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6964377Z #4 [auth] library/python:pull token for registry-1.docker.io
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6964617Z #4 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6964698Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6964841Z #5 [auth] library/node:pull token for registry-1.docker.io
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.6965105Z #5 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.8465106Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:09.8466013Z #6 [internal] load metadata for docker.io/library/python:3.13-slim-bookworm
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.1128285Z #6 DONE 0.7s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.1128566Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.1128808Z #3 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.1129039Z #3 DONE 0.7s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2478451Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2479717Z #7 [internal] load .dockerignore
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2480201Z #7 transferring context: 139B done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2480490Z #7 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2480571Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2480657Z #8 [internal] load build context
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2481130Z #8 transferring context: 99.65kB done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2481291Z #8 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2481364Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2481838Z #9 [web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.2482740Z #9 resolve docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 0.0s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.4459638Z #9 sha256:a8de9fa052209313d8e45435a8486e29b20eebaa820e2e7f63a7c3c94b4fa567 448B / 448B 0.1s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.6092653Z #9 sha256:2cfab517365cfc6b4bd1f8c4cb01754884ef75bc38758b3c41e291c696f019f5 1.71MB / 1.71MB 0.1s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.6093502Z #9 sha256:d22c69a95cf463f4cb74462bd2899597ce505d82bd4c01ceddf7845e12f13856 9.44MB / 49.84MB 0.2s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.6094272Z #9 sha256:f0400f4b55b0ad346bf6167a1b64a258e4d73db608c457798ce35e4ffeebfaaf 3.31kB / 3.31kB 0.2s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.7482468Z #9 sha256:d22c69a95cf463f4cb74462bd2899597ce505d82bd4c01ceddf7845e12f13856 49.84MB / 49.84MB 0.3s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:10.7483289Z #9 sha256:f0400f4b55b0ad346bf6167a1b64a258e4d73db608c457798ce35e4ffeebfaaf 3.31kB / 3.31kB 0.2s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1095873Z #9 sha256:d22c69a95cf463f4cb74462bd2899597ce505d82bd4c01ceddf7845e12f13856 49.84MB / 49.84MB 0.5s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1096471Z #9 DONE 0.8s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1096593Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1097120Z #10 [app  1/12] FROM docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1098471Z #10 resolve docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641 0.0s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1099293Z #10 sha256:29d8700fe216d98a8d918ecf891265355e2ca697f9c11e8290d00813caaed60d 250B / 250B 0.1s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1100032Z #10 sha256:aded561bdc17f79b65ec824282d38146fac0eb9d8951b9a7a4ca462bbea8c21d 14.89MB / 14.89MB 0.3s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1100921Z #10 sha256:29a6e787b2e07b2b8a2c88b600812f9f7588374cf74e6f17d696695c8984d900 3.34MB / 3.34MB 0.3s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1101651Z #10 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 28.25MB / 28.25MB 0.4s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1102332Z #10 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1650569Z #10 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 0.5s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.1651280Z #10 DONE 1.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.3973212Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.3974506Z #9 [web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.3975501Z #9 extracting sha256:f0400f4b55b0ad346bf6167a1b64a258e4d73db608c457798ce35e4ffeebfaaf 0.0s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.3976264Z #9 extracting sha256:d22c69a95cf463f4cb74462bd2899597ce505d82bd4c01ceddf7845e12f13856
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.5952851Z #9 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.5953102Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.5953728Z #10 [app  1/12] FROM docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.5954556Z #10 extracting sha256:29a6e787b2e07b2b8a2c88b600812f9f7588374cf74e6f17d696695c8984d900 0.1s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.5955263Z #10 extracting sha256:aded561bdc17f79b65ec824282d38146fac0eb9d8951b9a7a4ca462bbea8c21d 0.3s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.5955725Z #10 DONE 1.5s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7539304Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7540301Z #10 [app  1/12] FROM docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7541250Z #10 extracting sha256:29d8700fe216d98a8d918ecf891265355e2ca697f9c11e8290d00813caaed60d done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7541634Z #10 DONE 1.5s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7541716Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7542015Z #11 [app  2/12] RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.7954878Z #11 0.193 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.9126511Z #11 0.203 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.9127269Z #11 0.204 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.9127906Z #11 0.259 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:11.9128517Z #11 0.310 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0245716Z #11 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0246330Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0247987Z #9 [web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0248935Z #9 extracting sha256:d22c69a95cf463f4cb74462bd2899597ce505d82bd4c01ceddf7845e12f13856 0.8s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0249460Z #9 DONE 1.7s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0250267Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0250852Z #11 [app  2/12] RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.0251654Z #11 0.361 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [354 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.2091286Z #11 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.2091819Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.2092640Z #9 [web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.2093193Z #9 extracting sha256:2cfab517365cfc6b4bd1f8c4cb01754884ef75bc38758b3c41e291c696f019f5 0.0s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.2093888Z #9 extracting sha256:a8de9fa052209313d8e45435a8486e29b20eebaa820e2e7f63a7c3c94b4fa567 done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.2094152Z #9 DONE 1.7s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.3582464Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:12.3583652Z #12 [web 2/6] WORKDIR /app/apps/web
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2992622Z #12 DONE 3.2s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2992870Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2993401Z #11 [app  2/12] RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2993922Z #11 0.967 Fetched 9393 kB in 1s (11.7 MB/s)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2994131Z #11 0.967 Reading package lists...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2994383Z #11 1.332 Reading package lists...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2994603Z #11 1.678 Building dependency tree...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2994795Z #11 1.870 Reading state information...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2995031Z #11 2.021 The following additional packages will be installed:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2995360Z #11 2.021   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-12 g++-12 gcc
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2995748Z #11 2.022   gcc-12 libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2996080Z #11 2.022   libcrypt-dev libctf-nobfd0 libctf0 libgcc-12-dev libgomp1 libgprofng0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2996420Z #11 2.022   libgssapi-krb5-2 libisl23 libitm1 libjansson4 libk5crypto3 libkeyutils1
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2996771Z #11 2.022   libkrb5-3 libkrb5support0 liblsan0 libmpc3 libmpfr6 libnsl-dev libnsl2
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2997130Z #11 2.022   libquadmath0 libstdc++-12-dev libtirpc-common libtirpc-dev libtirpc3
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2997443Z #11 2.022   libtsan2 libubsan1 linux-libc-dev rpcsvc-proto
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2997729Z #11 2.023 Suggested packages:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2997997Z #11 2.023   binutils-doc cpp-doc gcc-12-locales cpp-12-doc g++-multilib g++-12-multilib
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2998363Z #11 2.023   gcc-12-doc gcc-multilib make manpages-dev autoconf automake libtool flex
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2998754Z #11 2.023   bison gdb gcc-doc gcc-12-multilib glibc-doc krb5-doc krb5-user
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2998981Z #11 2.023   libstdc++-12-doc
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2999181Z #11 2.023 Recommended packages:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2999533Z #11 2.023   manpages manpages-dev libc-devtools krb5-locales
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.2999777Z #11 2.131 The following NEW packages will be installed:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3000162Z #11 2.131   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-12 g++ g++-12 gcc
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3000511Z #11 2.131   gcc-12 libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3001018Z #11 2.131   libcrypt-dev libctf-nobfd0 libctf0 libgcc-12-dev libgomp1 libgprofng0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3001353Z #11 2.131   libgssapi-krb5-2 libisl23 libitm1 libjansson4 libk5crypto3 libkeyutils1
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3001781Z #11 2.131   libkrb5-3 libkrb5support0 liblsan0 libmpc3 libmpfr6 libnsl-dev libnsl2
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3002107Z #11 2.132   libquadmath0 libstdc++-12-dev libtirpc-common libtirpc-dev libtirpc3
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3002455Z #11 2.132   libtsan2 libubsan1 linux-libc-dev rpcsvc-proto
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3002756Z #11 2.159 0 upgraded, 43 newly installed, 0 to remove and 1 not upgraded.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3002994Z #11 2.159 Need to get 64.2 MB of archives.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3003361Z #11 2.159 After this operation, 261 MB of additional disk space will be used.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3003936Z #11 2.159 Get:1 http://deb.debian.org/debian bookworm/main amd64 binutils-common amd64 2.40-2 [2487 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3004649Z #11 2.280 Get:2 http://deb.debian.org/debian bookworm/main amd64 libbinutils amd64 2.40-2 [572 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3005131Z #11 2.507 Get:3 http://deb.debian.org/debian bookworm/main amd64 libctf-nobfd0 amd64 2.40-2 [153 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3005561Z #11 2.507 Get:4 http://deb.debian.org/debian bookworm/main amd64 libctf0 amd64 2.40-2 [89.8 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3005972Z #11 2.627 Get:5 http://deb.debian.org/debian bookworm/main amd64 libgprofng0 amd64 2.40-2 [812 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3006438Z #11 2.815 Get:6 http://deb.debian.org/debian bookworm/main amd64 libjansson4 amd64 2.14-2 [40.8 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3006994Z #11 2.816 Get:7 http://deb.debian.org/debian bookworm/main amd64 binutils-x86-64-linux-gnu amd64 2.40-2 [2246 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3007687Z #11 2.875 Get:8 http://deb.debian.org/debian bookworm/main amd64 binutils amd64 2.40-2 [65.0 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3008324Z #11 2.904 Get:9 http://deb.debian.org/debian bookworm/main amd64 libisl23 amd64 0.25-1.1 [683 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3008942Z #11 2.925 Get:10 http://deb.debian.org/debian bookworm/main amd64 libmpfr6 amd64 4.2.0-1 [701 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3009559Z #11 2.944 Get:11 http://deb.debian.org/debian bookworm/main amd64 libmpc3 amd64 1.3.1-1 [51.5 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3010199Z #11 2.954 Get:12 http://deb.debian.org/debian bookworm/main amd64 cpp-12 amd64 12.2.0-14+deb12u1 [9768 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3010595Z #11 2.995 Get:13 http://deb.debian.org/debian bookworm/main amd64 cpp amd64 4:12.2.0-3 [6836 B]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3011224Z #11 3.004 Get:14 http://deb.debian.org/debian bookworm/main amd64 libcc1-0 amd64 12.2.0-14+deb12u1 [41.7 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3011747Z #11 3.014 Get:15 http://deb.debian.org/debian bookworm/main amd64 libgomp1 amd64 12.2.0-14+deb12u1 [116 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3012193Z #11 3.024 Get:16 http://deb.debian.org/debian bookworm/main amd64 libitm1 amd64 12.2.0-14+deb12u1 [26.1 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3012695Z #11 3.025 Get:17 http://deb.debian.org/debian bookworm/main amd64 libatomic1 amd64 12.2.0-14+deb12u1 [9376 B]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3013173Z #11 3.025 Get:18 http://deb.debian.org/debian bookworm/main amd64 libasan8 amd64 12.2.0-14+deb12u1 [2193 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3013621Z #11 3.044 Get:19 http://deb.debian.org/debian bookworm/main amd64 liblsan0 amd64 12.2.0-14+deb12u1 [969 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3014339Z #11 3.064 Get:20 http://deb.debian.org/debian bookworm/main amd64 libtsan2 amd64 12.2.0-14+deb12u1 [2197 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3015062Z #11 3.079 Get:21 http://deb.debian.org/debian bookworm/main amd64 libubsan1 amd64 12.2.0-14+deb12u1 [883 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3015786Z #11 3.124 Get:22 http://deb.debian.org/debian bookworm/main amd64 libquadmath0 amd64 12.2.0-14+deb12u1 [145 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3016525Z #11 3.125 Get:23 http://deb.debian.org/debian bookworm/main amd64 libgcc-12-dev amd64 12.2.0-14+deb12u1 [2437 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3017021Z #11 3.174 Get:24 http://deb.debian.org/debian bookworm/main amd64 gcc-12 amd64 12.2.0-14+deb12u1 [19.3 MB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3017418Z #11 3.253 Get:25 http://deb.debian.org/debian bookworm/main amd64 gcc amd64 4:12.2.0-3 [5216 B]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3017829Z #11 3.263 Get:26 http://deb.debian.org/debian bookworm/main amd64 libc-dev-bin amd64 2.36-9+deb12u14 [48.1 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3018302Z #11 3.264 Get:27 http://deb.debian.org/debian-security bookworm-security/main amd64 linux-libc-dev amd64 6.1.190-1 [2409 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3018755Z #11 3.293 Get:28 http://deb.debian.org/debian bookworm/main amd64 libcrypt-dev amd64 1:4.4.33-2 [118 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3019193Z #11 3.344 Get:29 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u5 [33.2 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3019629Z #11 3.357 Get:30 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u5 [79.7 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3020045Z #11 3.362 Get:31 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3020582Z #11 3.363 Get:32 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u5 [332 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3021190Z #11 3.364 Get:33 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u5 [135 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3021623Z #11 3.372 Get:34 http://deb.debian.org/debian bookworm/main amd64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3022033Z #11 3.373 Get:35 http://deb.debian.org/debian bookworm/main amd64 libtirpc3 amd64 1.3.3+ds-1 [85.2 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3022480Z #11 3.393 Get:36 http://deb.debian.org/debian bookworm/main amd64 libnsl2 amd64 1.3.0-2 [39.5 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3023260Z #11 3.394 Get:37 http://deb.debian.org/debian bookworm/main amd64 libtirpc-dev amd64 1.3.3+ds-1 [191 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3023926Z #11 3.394 Get:38 http://deb.debian.org/debian bookworm/main amd64 libnsl-dev amd64 1.3.0-2 [66.4 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3024486Z #11 3.394 Get:39 http://deb.debian.org/debian bookworm/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3024906Z #11 3.402 Get:40 http://deb.debian.org/debian bookworm/main amd64 libc6-dev amd64 2.36-9+deb12u14 [1904 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3025506Z #11 3.412 Get:41 http://deb.debian.org/debian bookworm/main amd64 libstdc++-12-dev amd64 12.2.0-14+deb12u1 [2047 kB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3025936Z #11 3.437 Get:42 http://deb.debian.org/debian bookworm/main amd64 g++-12 amd64 12.2.0-14+deb12u1 [10.7 MB]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3026546Z #11 3.472 Get:43 http://deb.debian.org/debian bookworm/main amd64 g++ amd64 4:12.2.0-3 [1356 B]
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3027155Z #11 3.569 debconf: delaying package configuration, since apt-utils is not installed
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.3027432Z #11 3.617 Fetched 64.2 MB in 1s (48.1 MB/s)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4668084Z #11 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4668493Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4668868Z #13 [web 3/6] COPY apps/web/package*.json ./
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4669282Z #13 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4669574Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4670051Z #11 [app  2/12] RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4670953Z #11 3.702 Selecting previously unselected package binutils-common:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4671639Z #11 3.702 (Reading database ... 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4671967Z (Reading database ... 5%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4672221Z (Reading database ... 10%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4672465Z (Reading database ... 15%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4672702Z (Reading database ... 20%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4672941Z (Reading database ... 25%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4673176Z (Reading database ... 30%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4673430Z (Reading database ... 35%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4673669Z (Reading database ... 40%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4673911Z (Reading database ... 45%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4674145Z (Reading database ... 50%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4674386Z (Reading database ... 55%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4674621Z (Reading database ... 60%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4674852Z (Reading database ... 65%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4675099Z (Reading database ... 70%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4675342Z (Reading database ... 75%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4675572Z (Reading database ... 80%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4675807Z (Reading database ... 85%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4676047Z (Reading database ... 90%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4676282Z (Reading database ... 95%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4676521Z (Reading database ... 100%
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4676939Z (Reading database ... 6648 files and directories currently installed.)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4677482Z #11 3.710 Preparing to unpack .../00-binutils-common_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4677939Z #11 3.712 Unpacking binutils-common:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.4904681Z #11 3.888 Selecting previously unselected package libbinutils:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6417168Z #11 3.889 Preparing to unpack .../01-libbinutils_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6417730Z #11 3.890 Unpacking libbinutils:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6418146Z #11 3.934 Selecting previously unselected package libctf-nobfd0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6418932Z #11 3.936 Preparing to unpack .../02-libctf-nobfd0_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6419332Z #11 3.936 Unpacking libctf-nobfd0:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6419717Z #11 3.957 Selecting previously unselected package libctf0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6420125Z #11 3.959 Preparing to unpack .../03-libctf0_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6420480Z #11 3.960 Unpacking libctf0:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6421004Z #11 3.978 Selecting previously unselected package libgprofng0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6421440Z #11 3.980 Preparing to unpack .../04-libgprofng0_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6421999Z #11 3.981 Unpacking libgprofng0:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.6422389Z #11 4.039 Selecting previously unselected package libjansson4:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.8278749Z #11 4.040 Preparing to unpack .../05-libjansson4_2.14-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.8279342Z #11 4.043 Unpacking libjansson4:amd64 (2.14-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.8279824Z #11 4.055 Selecting previously unselected package binutils-x86-64-linux-gnu.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.8280377Z #11 4.056 Preparing to unpack .../06-binutils-x86-64-linux-gnu_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.8281055Z #11 4.074 Unpacking binutils-x86-64-linux-gnu (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.8296971Z #11 4.227 Selecting previously unselected package binutils.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9532480Z #11 4.228 Preparing to unpack .../07-binutils_2.40-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9533625Z #11 4.229 Unpacking binutils (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9534881Z #11 4.250 Selecting previously unselected package libisl23:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9536127Z #11 4.252 Preparing to unpack .../08-libisl23_0.25-1.1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9536783Z #11 4.253 Unpacking libisl23:amd64 (0.25-1.1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9537503Z #11 4.307 Selecting previously unselected package libmpfr6:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9538379Z #11 4.308 Preparing to unpack .../09-libmpfr6_4.2.0-1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9538983Z #11 4.309 Unpacking libmpfr6:amd64 (4.2.0-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:15.9539528Z #11 4.350 Selecting previously unselected package libmpc3:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.1366147Z #11 4.352 Preparing to unpack .../10-libmpc3_1.3.1-1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.1371640Z #11 4.353 Unpacking libmpc3:amd64 (1.3.1-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.1373397Z #11 4.376 Selecting previously unselected package cpp-12.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.1374296Z #11 4.379 Preparing to unpack .../11-cpp-12_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.1374785Z #11 4.381 Unpacking cpp-12 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.6801297Z #11 4.910 Selecting previously unselected package cpp.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.6801738Z #11 4.911 Preparing to unpack .../12-cpp_4%3a12.2.0-3_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.6802017Z #11 4.912 Unpacking cpp (4:12.2.0-3) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.6802270Z #11 4.925 Selecting previously unselected package libcc1-0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.6802588Z #11 4.926 Preparing to unpack .../13-libcc1-0_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:16.6802914Z #11 4.927 Unpacking libcc1-0:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.1211129Z #11 5.518 Selecting previously unselected package libgomp1:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2640377Z #11 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2640991Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2641448Z #14 [web 4/6] RUN npm ci
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2641988Z #14 1.141 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2642546Z #14 1.141 added 22 packages, and audited 23 packages in 974ms
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2642871Z #14 1.142 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2643143Z #14 1.142 5 packages are looking for funding
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2643481Z #14 1.142   run `npm fund` for details
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2643763Z #14 1.142 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2644005Z #14 1.142 found 0 vulnerabilities
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2644264Z #14 1.143 npm notice
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2644643Z #14 1.143 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2645192Z #14 1.143 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2645992Z #14 1.143 npm notice To update run: npm install -g npm@12.2.0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2646305Z #14 1.143 npm notice
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2646513Z #14 DONE 1.9s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2646625Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2646760Z #15 [web 5/6] COPY apps/web/ ./
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2646995Z #15 DONE 0.1s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2647108Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2647506Z #11 [app  2/12] RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2648137Z #11 5.519 Preparing to unpack .../14-libgomp1_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2648590Z #11 5.568 Unpacking libgomp1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2649216Z #11 5.599 Selecting previously unselected package libitm1:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2649777Z #11 5.600 Preparing to unpack .../15-libitm1_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.2650215Z #11 5.601 Unpacking libitm1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4533277Z #11 5.668 Selecting previously unselected package libatomic1:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4533968Z #11 5.669 Preparing to unpack .../16-libatomic1_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4534472Z #11 5.671 Unpacking libatomic1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4534940Z #11 5.697 Selecting previously unselected package libasan8:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4535456Z #11 5.699 Preparing to unpack .../17-libasan8_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4535925Z #11 5.700 Unpacking libasan8:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.4611570Z #11 5.857 Selecting previously unselected package liblsan0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6790038Z #11 5.858 Preparing to unpack .../18-liblsan0_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6791287Z #11 5.859 Unpacking liblsan0:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6792000Z #11 5.923 Selecting previously unselected package libtsan2:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6792650Z #11 5.924 Preparing to unpack .../19-libtsan2_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6793290Z #11 5.925 Unpacking libtsan2:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6802935Z #11 6.077 Selecting previously unselected package libubsan1:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.6804054Z #11 6.077 Preparing to unpack .../20-libubsan1_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.7809217Z #11 6.077 Unpacking libubsan1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.7810266Z #11 6.152 Selecting previously unselected package libquadmath0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.7811639Z #11 6.152 Preparing to unpack .../21-libquadmath0_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.7812327Z #11 6.153 Unpacking libquadmath0:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.7813011Z #11 6.178 Selecting previously unselected package libgcc-12-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.9341279Z #11 6.180 Preparing to unpack .../22-libgcc-12-dev_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.9341817Z #11 6.180 Unpacking libgcc-12-dev:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:17.9502417Z #11 6.347 Selecting previously unselected package gcc-12.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.1052497Z #11 6.349 Preparing to unpack .../23-gcc-12_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.1059265Z #11 6.352 Unpacking gcc-12 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.5786845Z #11 6.976 Selecting previously unselected package gcc.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7556319Z #11 6.977 Preparing to unpack .../24-gcc_4%3a12.2.0-3_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7556843Z #11 6.978 Unpacking gcc (4:12.2.0-3) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7557231Z #11 6.994 Selecting previously unselected package libc-dev-bin.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7557722Z #11 6.995 Preparing to unpack .../25-libc-dev-bin_2.36-9+deb12u14_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7558092Z #11 6.996 Unpacking libc-dev-bin (2.36-9+deb12u14) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7558372Z #11 7.009 Selecting previously unselected package linux-libc-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7558687Z #11 7.010 Preparing to unpack .../26-linux-libc-dev_6.1.190-1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.7559496Z #11 7.011 Unpacking linux-libc-dev:amd64 (6.1.190-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8563146Z #11 7.167 Selecting previously unselected package libcrypt-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8564150Z #11 7.167 Preparing to unpack .../27-libcrypt-dev_1%3a4.4.33-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8564983Z #11 7.172 Unpacking libcrypt-dev:amd64 (1:4.4.33-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8565692Z #11 7.195 Selecting previously unselected package libkrb5support0:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8566399Z #11 7.197 Preparing to unpack .../28-libkrb5support0_1.20.1-2+deb12u5_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8567137Z #11 7.197 Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8568107Z #11 7.220 Selecting previously unselected package libk5crypto3:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8568771Z #11 7.222 Preparing to unpack .../29-libk5crypto3_1.20.1-2+deb12u5_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8569414Z #11 7.222 Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8570016Z #11 7.251 Selecting previously unselected package libkeyutils1:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.8571275Z #11 7.253 Preparing to unpack .../30-libkeyutils1_1.6.3-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9639528Z #11 7.255 Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9640471Z #11 7.275 Selecting previously unselected package libkrb5-3:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9641241Z #11 7.276 Preparing to unpack .../31-libkrb5-3_1.20.1-2+deb12u5_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9641844Z #11 7.277 Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9642427Z #11 7.316 Selecting previously unselected package libgssapi-krb5-2:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9643069Z #11 7.318 Preparing to unpack .../32-libgssapi-krb5-2_1.20.1-2+deb12u5_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9643707Z #11 7.319 Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9644265Z #11 7.342 Selecting previously unselected package libtirpc-common.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9644853Z #11 7.344 Preparing to unpack .../33-libtirpc-common_1.3.3+ds-1_all.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9645412Z #11 7.345 Unpacking libtirpc-common (1.3.3+ds-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:18.9645947Z #11 7.361 Selecting previously unselected package libtirpc3:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0648341Z #11 7.363 Preparing to unpack .../34-libtirpc3_1.3.3+ds-1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0648903Z #11 7.369 Unpacking libtirpc3:amd64 (1.3.3+ds-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0649310Z #11 7.396 Selecting previously unselected package libnsl2:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0649760Z #11 7.398 Preparing to unpack .../35-libnsl2_1.3.0-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0650160Z #11 7.399 Unpacking libnsl2:amd64 (1.3.0-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0650617Z #11 7.435 Selecting previously unselected package libtirpc-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0651269Z #11 7.436 Preparing to unpack .../36-libtirpc-dev_1.3.3+ds-1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0651708Z #11 7.437 Unpacking libtirpc-dev:amd64 (1.3.3+ds-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0652136Z #11 7.461 Selecting previously unselected package libnsl-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.0652603Z #11 7.462 Preparing to unpack .../37-libnsl-dev_1.3.0-2_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2633494Z #11 7.463 Unpacking libnsl-dev:amd64 (1.3.0-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2634451Z #11 7.483 Selecting previously unselected package rpcsvc-proto.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2635048Z #11 7.485 Preparing to unpack .../38-rpcsvc-proto_1.4.3-1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2635543Z #11 7.486 Unpacking rpcsvc-proto (1.4.3-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2636052Z #11 7.509 Selecting previously unselected package libc6-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2636608Z #11 7.510 Preparing to unpack .../39-libc6-dev_2.36-9+deb12u14_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2637179Z #11 7.511 Unpacking libc6-dev:amd64 (2.36-9+deb12u14) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.2637709Z #11 7.660 Selecting previously unselected package libstdc++-12-dev:amd64.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.4162864Z #11 7.662 Preparing to unpack .../40-libstdc++-12-dev_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.4163724Z #11 7.663 Unpacking libstdc++-12-dev:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.4527132Z #11 7.850 Selecting previously unselected package g++-12.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.6616967Z #11 7.852 Preparing to unpack .../41-g++-12_12.2.0-14+deb12u1_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:19.6617558Z #11 7.852 Unpacking g++-12 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.3461950Z #11 8.743 Selecting previously unselected package g++.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.5291708Z #11 8.745 Preparing to unpack .../42-g++_4%3a12.2.0-3_amd64.deb ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.5292123Z #11 8.775 Unpacking g++ (4:12.2.0-3) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.5437563Z #11 8.941 Setting up libkeyutils1:amd64 (1.6.3-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7748979Z #11 ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7749555Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7749722Z #16 [web 6/6] RUN npm run build
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7749994Z #16 0.209 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7750255Z #16 0.209 > meridian-console@0.1.0 build
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7750575Z #16 0.209 > tsc --noEmit && vite build
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7750960Z #16 0.209 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7751237Z #16 1.491 vite v6.4.4 building for production...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7751560Z #16 1.552 transforming...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7752191Z #16 2.281 ✓ 28 modules transformed.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7752469Z #16 2.397 rendering chunks...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7752745Z #16 2.403 computing gzip size...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7753172Z #16 2.409 dist/index.html                   0.41 kB │ gzip:  0.29 kB
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7753523Z #16 2.409 dist/assets/index-BhneZbza.css    7.10 kB │ gzip:  2.26 kB
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7753845Z #16 2.409 dist/assets/index-DZOzr5Wq.js   204.64 kB │ gzip: 64.26 kB
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7754149Z #16 2.410 ✓ built in 898ms
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.7754380Z #16 DONE 3.5s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9500239Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9501478Z #11 [app  2/12] RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9502093Z #11 9.173 Setting up libtirpc-common (1.3.3+ds-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9502482Z #11 9.177 Setting up binutils-common:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9502922Z #11 9.180 Setting up linux-libc-dev:amd64 (6.1.190-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9503301Z #11 9.184 Setting up libctf-nobfd0:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9503680Z #11 9.186 Setting up libgomp1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9504040Z #11 9.188 Setting up libjansson4:amd64 (2.14-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9504431Z #11 9.190 Setting up libkrb5support0:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9504814Z #11 9.192 Setting up rpcsvc-proto (1.4.3-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9505202Z #11 9.193 Setting up libmpfr6:amd64 (4.2.0-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9505576Z #11 9.195 Setting up libquadmath0:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9505902Z #11 9.197 Setting up libmpc3:amd64 (1.3.1-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9506142Z #11 9.199 Setting up libatomic1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9506472Z #11 9.201 Setting up libk5crypto3:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9506746Z #11 9.202 Setting up libubsan1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9506997Z #11 9.204 Setting up libcrypt-dev:amd64 (1:4.4.33-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9507325Z #11 9.210 Setting up libasan8:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9507571Z #11 9.211 Setting up libkrb5-3:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9507827Z #11 9.213 Setting up libtsan2:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9508150Z #11 9.215 Setting up libbinutils:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9508371Z #11 9.217 Setting up libisl23:amd64 (0.25-1.1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9508596Z #11 9.219 Setting up libc-dev-bin (2.36-9+deb12u14) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9508938Z #11 9.220 Setting up libcc1-0:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9509315Z #11 9.222 Setting up liblsan0:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9509701Z #11 9.224 Setting up libitm1:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9510084Z #11 9.226 Setting up libctf0:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9510450Z #11 9.228 Setting up cpp-12 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9516626Z #11 9.230 Setting up libgprofng0:amd64 (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9517011Z #11 9.231 Setting up libgcc-12-dev:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9517424Z #11 9.233 Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u5) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9517796Z #11 9.236 Setting up cpp (4:12.2.0-3) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9518146Z #11 9.241 Setting up binutils-x86-64-linux-gnu (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9518522Z #11 9.242 Setting up libtirpc3:amd64 (1.3.3+ds-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9518833Z #11 9.244 Setting up binutils (2.40-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9519186Z #11 9.246 Setting up libtirpc-dev:amd64 (1.3.3+ds-1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9519768Z #11 9.248 Setting up gcc-12 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9520099Z #11 9.250 Setting up libnsl2:amd64 (1.3.0-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9520432Z #11 9.252 Setting up gcc (4:12.2.0-3) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9520936Z #11 9.258 Setting up libnsl-dev:amd64 (1.3.0-2) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9521290Z #11 9.260 Setting up libc6-dev:amd64 (2.36-9+deb12u14) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9521754Z #11 9.262 Setting up libstdc++-12-dev:amd64 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9522111Z #11 9.263 Setting up g++-12 (12.2.0-14+deb12u1) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9522408Z #11 9.265 Setting up g++ (4:12.2.0-3) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9522872Z #11 9.268 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9523404Z #11 9.270 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+checks	Fresh clone Compose smoke	2026-10-21T03:23:20.9523713Z #11 DONE 9.3s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1712411Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1713478Z #17 [app  3/12] WORKDIR /app
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1713937Z #17 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1714114Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1714742Z #18 [app  4/12] COPY pyproject.toml setup.py ./
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1715188Z #18 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1715358Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1715532Z #19 [app  5/12] COPY core/ core/
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1726278Z #19 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1726519Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1726698Z #20 [app  6/12] COPY meridian/ meridian/
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1726959Z #20 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1727069Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:21.1727277Z #21 [app  7/12] RUN pip install --upgrade pip && pip install --no-cache-dir .
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.0805119Z #21 1.060 Requirement already satisfied: pip in /usr/local/lib/python3.13/site-packages (26.2.1)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.2234224Z #21 1.151 Collecting pip
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.2234804Z #21 1.203   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.3266203Z #21 1.212 Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.3267217Z #21 1.246    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 121.1 MB/s  0:00:00
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.3267725Z #21 1.306 Installing collected packages: pip
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.4778523Z #21 1.306   Attempting uninstall: pip
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.4779068Z #21 1.308     Found existing installation: pip 26.2.1
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.4779454Z #21 1.337     Uninstalling pip-26.2.1:
+checks	Fresh clone Compose smoke	2026-10-21T03:23:22.4779821Z #21 1.457       Successfully uninstalled pip-26.2.1
+checks	Fresh clone Compose smoke	2026-10-21T03:23:23.0797781Z #21 2.059 Successfully installed pip-26.2.2
+checks	Fresh clone Compose smoke	2026-10-21T03:23:23.2304605Z #21 2.059 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:23.4743558Z #21 2.453 Processing ./.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:23.6261829Z #21 2.455   Installing build dependencies: started
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.1528952Z #21 3.132   Installing build dependencies: finished with status 'done'
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.3037945Z #21 3.133   Getting requirements to build wheel: started
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.5274573Z #21 3.507   Getting requirements to build wheel: finished with status 'done'
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.6777749Z #21 3.508   Preparing metadata (pyproject.toml): started
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.6778521Z #21 3.657   Preparing metadata (pyproject.toml): finished with status 'done'
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.8158399Z #21 3.751 Collecting fastapi==0.150.0 (from meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:24.8158856Z #21 3.795   Downloading fastapi-0.150.0-py3-none-any.whl.metadata (26 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.0065751Z #21 3.813 Collecting uvicorn==0.54.0 (from meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.0066266Z #21 3.817   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.0066578Z #21 3.883 Collecting websockets==17.3 (from meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.0067041Z #21 3.886   Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.0067796Z #21 3.986 Collecting numpy==2.5.4 (from meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1069477Z #21 3.989   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1070332Z #21 4.002 Collecting starlette>=0.46.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1071107Z #21 4.005   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1071672Z #21 4.057 Collecting pydantic>=2.9.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1072207Z #21 4.061   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1072793Z #21 4.077 Collecting typing-extensions>=4.8.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1073184Z #21 4.081   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.1073569Z #21 4.086 Collecting typing-inspection>=0.4.2 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3234971Z #21 4.091   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3235453Z #21 4.097 Collecting annotated-doc>=0.0.2 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3235839Z #21 4.100   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3236197Z #21 4.110 Collecting opentelemetry-api>=1.44.0 (from fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3236570Z #21 4.114   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3236900Z #21 4.123 Collecting click>=7.0 (from uvicorn==0.54.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3237200Z #21 4.130   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3237497Z #21 4.136 Collecting h11>=0.8 (from uvicorn==0.54.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3237806Z #21 4.140   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3238170Z #21 4.147 Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.3238539Z #21 4.152   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.5492686Z #21 4.527 Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6878104Z #21 4.536   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6878692Z #21 4.550 Collecting anyio<5,>=4.0.0 (from starlette>=0.46.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6879057Z #21 4.555   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6879454Z #21 4.564 Collecting idna>=2.8 (from anyio<5,>=4.0.0->starlette>=0.46.0->fastapi==0.150.0->meridian-fusion==0.1.0)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6879848Z #21 4.567   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6880140Z #21 4.575 Downloading fastapi-0.150.0-py3-none-any.whl (145 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.6880509Z #21 4.581 Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9294625Z #21 4.667    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 198.4 MB/s  0:00:00
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9295417Z #21 4.671 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9295844Z #21 4.675 Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9296247Z #21 4.678 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9296517Z #21 4.681 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9296759Z #21 4.684 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9297028Z #21 4.687 Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9297440Z #21 4.691 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9297814Z #21 4.695 Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9298484Z #21 4.700    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 489.4 MB/s  0:00:00
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9298784Z #21 4.704 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9299057Z #21 4.707 Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9299315Z #21 4.710 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9299566Z #21 4.713 Downloading idna-3.20-py3-none-any.whl (69 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9299837Z #21 4.716 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9300127Z #21 4.720 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9300421Z #21 4.757 Building wheels for collected packages: meridian-fusion
+checks	Fresh clone Compose smoke	2026-10-21T03:23:25.9300908Z #21 4.758   Building wheel for meridian-fusion (pyproject.toml): started
+checks	Fresh clone Compose smoke	2026-10-21T03:23:32.0676278Z #21 11.05   Building wheel for meridian-fusion (pyproject.toml): finished with status 'done'
+checks	Fresh clone Compose smoke	2026-10-21T03:23:32.2491923Z #21 11.05   Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-cp313-cp313-linux_x86_64.whl size=122152 sha256=a55a93ec3f07b7b959b946408b86940af642fa1303dbc837fda81605ac5c02c1
+checks	Fresh clone Compose smoke	2026-10-21T03:23:32.2493324Z #21 11.05   Stored in directory: /tmp/pip-ephem-wheel-cache-d0647iuy/wheels/19/62/e5/caf0138816cbbc0c92b8fb19626cf9ac282f22194a65231821
+checks	Fresh clone Compose smoke	2026-10-21T03:23:32.2493982Z #21 11.05 Successfully built meridian-fusion
+checks	Fresh clone Compose smoke	2026-10-21T03:23:32.2495128Z #21 11.08 Installing collected packages: websockets, typing-extensions, numpy, idna, h11, click, annotated-types, annotated-doc, uvicorn, typing-inspection, pydantic-core, opentelemetry-api, anyio, starlette, pydantic, fastapi, meridian-fusion
+checks	Fresh clone Compose smoke	2026-10-21T03:23:34.1811819Z #21 13.16 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:34.3331199Z #21 13.16 Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 fastapi-0.150.0 h11-0.16.0 idna-3.20 meridian-fusion-0.1.0 numpy-2.5.4 opentelemetry-api-1.45.1 pydantic-2.14.1 pydantic-core-2.50.1 starlette-1.9.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.54.0 websockets-17.3
+checks	Fresh clone Compose smoke	2026-10-21T03:23:34.3333375Z #21 13.16 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+checks	Fresh clone Compose smoke	2026-10-21T03:23:34.9253044Z #21 DONE 13.9s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0754135Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0754926Z #22 [app  8/12] COPY scripts/ scripts/
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0755401Z #22 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0755526Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0755815Z #23 [app  9/12] COPY --from=web /app/apps/web/dist/ /app/apps/web/dist/
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0757229Z #23 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0757504Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0760421Z #24 [app 10/12] RUN mkdir -p /usr/local/lib/python3.13/site-packages/apps/web && cp -r apps/web/dist /usr/local/lib/python3.13/site-packages/apps/web/
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.0761493Z #24 DONE 0.1s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.2213113Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.2214522Z #25 [app 11/12] RUN useradd --uid 10001 --create-home meridian && mkdir -p data && chown meridian:meridian data
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.2215209Z #25 DONE 0.1s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.3872433Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.3873334Z #26 [app 12/12] WORKDIR /srv
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.3873678Z #26 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.3873793Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.3873893Z #27 exporting to image
+checks	Fresh clone Compose smoke	2026-10-21T03:23:35.3874125Z #27 exporting layers
+checks	Fresh clone Compose smoke	2026-10-21T03:23:41.8967620Z #27 exporting layers 6.7s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:42.0730664Z #27 exporting manifest sha256:55be879c31f4c80932f394284153c3500cd21b391e0e91d5ea31df62bd583bb1 done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:42.0731654Z #27 exporting config sha256:5ec88fec31a517f84e86f54454260eff8ad4325576a8145a5dbd318721db8be1 done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:42.0732183Z #27 exporting attestation manifest sha256:7df63b2fb6db1b02933a9ad650e17d7de924e5822731cbcad8fff2c25426c281 done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:42.0732659Z #27 exporting manifest list sha256:dd3970b45f09b5466874f70bb13654d7824bac6606736a64b931f08d7c76ae51 done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:42.0733047Z #27 naming to docker.io/library/meridian-clean-meridian:latest done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:42.0733346Z #27 unpacking to docker.io/library/meridian-clean-meridian:latest
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.4813933Z #27 unpacking to docker.io/library/meridian-clean-meridian:latest 1.6s done
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5477459Z #27 DONE 8.3s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5477700Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5477868Z #28 resolving provenance for metadata file
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5478150Z #28 DONE 0.0s
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5478587Z  Image meridian-clean-meridian Built 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5563634Z  Network meridian-clean_default Creating 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5822335Z  Network meridian-clean_default Created 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5826152Z  Volume meridian-clean_meridian-data Creating 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5836292Z  Volume meridian-clean_meridian-data Created 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:43.5845738Z  Container meridian-clean-meridian-1 Creating 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:45.6156960Z  Container meridian-clean-meridian-1 Created 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:45.6211678Z  Container meridian-clean-meridian-1 Starting 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:45.8867283Z  Container meridian-clean-meridian-1 Started 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:45.8867760Z  Container meridian-clean-meridian-1 Waiting 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.3885617Z  Container meridian-clean-meridian-1 Healthy 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4007299Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4007762Z                                  Dload  Upload  Total   Spent   Left   Speed
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4033076Z 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4033336Z   0      0   0      0   0      0      0      0                              0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4033789Z 100     15 100     15   0      0   5105      0                              0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4034231Z 100     15 100     15   0      0   5036      0                              0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.4034619Z 100     15 100     15   0      0   4965      0                              0
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7777114Z {"status":"ok"}{
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7777397Z   "http_auth": true,
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7777611Z   "websocket_frames": 8,
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7777824Z   "static_asset": "/assets/index-DZOzr5Wq.js",
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7778021Z   "replay": {
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7778155Z     "frames": 8,
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7778286Z     "identical": true,
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7778571Z     "recorded_sha256": "606afc813ba6166a08feba2d99d23d8e22d61c00065a7f11a9e59731c98c2b5b",
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7778948Z     "replay_sha256": "606afc813ba6166a08feba2d99d23d8e22d61c00065a7f11a9e59731c98c2b5b"
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7779199Z   },
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7779325Z   "seeded_units": 1000
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.7779469Z }
+checks	Fresh clone Compose smoke	2026-10-21T03:23:56.9285569Z  Container meridian-clean-meridian-1 Stopping 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:57.0258713Z  Container meridian-clean-meridian-1 Stopped 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:57.0259395Z  Container meridian-clean-meridian-1 Removing 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:57.0336374Z  Container meridian-clean-meridian-1 Removed 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:57.0342451Z  Network meridian-clean_default Removing 
+checks	Fresh clone Compose smoke	2026-10-21T03:23:57.0802395Z  Network meridian-clean_default Removed 
+checks	Post Run actions/setup-node@v4	﻿2026-10-21T03:23:57.1337910Z Post job cleanup.
+checks	Post Run actions/setup-node@v4	2026-10-21T03:23:57.2160541Z (node:4113) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+checks	Post Run actions/setup-node@v4	2026-10-21T03:23:57.2161284Z (Use `node --trace-deprecation ...` to show where the warning was created)
+checks	Post Run actions/setup-node@v4	2026-10-21T03:23:57.2163226Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-76542b789693cdd29e0210de8c6e460c2f9cc89367dd2c2a9816ea447da99661, not saving cache.
+checks	Post Run actions/setup-python@v5	﻿2026-10-21T03:23:57.2269007Z Post job cleanup.
+checks	Post Run actions/setup-python@v5	2026-10-21T03:23:57.3062545Z (node:4121) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+checks	Post Run actions/setup-python@v5	2026-10-21T03:23:57.3063135Z (Use `node --trace-deprecation ...` to show where the warning was created)
+checks	Post Run actions/checkout@v4	﻿2026-10-21T03:23:57.3218729Z Post job cleanup.
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3822295Z [command]/usr/bin/git version
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3860020Z git version 2.55.0
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3884593Z Temporarily overriding HOME='/home/runner/work/_temp/34ec4eeb-fbfc-4eb2-b5c2-e1c66ca4eacd' before making global git config changes
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3885394Z Adding repository directory to the temporary git global config as a safe directory
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3891353Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/meridian/meridian
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3923636Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.3954719Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.4216867Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.4249971Z http.https://github.com/.extraheader
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.4251534Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.4290488Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.4542779Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+checks	Post Run actions/checkout@v4	2026-10-21T03:23:57.4572627Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+checks	Complete job	﻿2026-10-21T03:23:57.4933352Z Cleaning up orphan processes
+checks	Complete job	2026-10-21T03:23:57.5184210Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
