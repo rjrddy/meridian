@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=75", "pybind11==3.1.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "meridian-fusion"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["fastapi==0.150.0", "uvicorn==0.54.0", "numpy==2.5.4"]
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "hypothesis==6.170.5", "httpx==0.28.1", "ruff==0.17.1", "clang-format==23.1.0", "pip-audit", "playwright==1.64.0"]
+[tool.setuptools.packages.find]
+include = ["meridian*"]
+[tool.ruff]
+line-length = 100
+[tool.pytest.ini_options]
+testpaths = ["tests"]
