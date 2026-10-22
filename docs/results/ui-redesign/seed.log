@@ -1,0 +1,3 @@
+Command: .venv/bin/python scripts/seed.py
+{'seeded_run': 'seed-synthetic', 'frames': 300}
+{'units': 1000, 'statuses': {'out-of-spec': 53, 'pass': 937, 'timeout': 10}, 'yield_percent': 93.7, 'timeout_attempts': 88}

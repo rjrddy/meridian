@@ -1,0 +1,291 @@
+INFO:     Started server process [86256]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+{"event":"http","method":"GET","status":200,"trace":"9065fd4789f4c2c9"}
+INFO:     127.0.0.1:49730 - "GET /health HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"a79bf60585fa040f"}
+INFO:     127.0.0.1:49737 - "GET / HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"045e8db42c62b469"}
+INFO:     127.0.0.1:49739 - "GET /assets/index-uXBqAxJD.css HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"16f8215bb8f52bff"}
+INFO:     127.0.0.1:49737 - "GET /assets/index-BptOM75V.js HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":401,"trace":"bfb29188f15489e5"}
+INFO:     127.0.0.1:49737 - "GET /api/session HTTP/1.1" 401 Unauthorized
+{"event":"http","method":"GET","status":404,"trace":"66dacf89a5264ec8"}
+INFO:     127.0.0.1:49737 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+{"event":"http","method":"POST","status":200,"trace":"8f75e43e960204ff"}
+INFO:     127.0.0.1:49737 - "POST /api/login HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7b55b2032d4cb460"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49742 - "WebSocket /ws" [accepted]
+INFO:     connection open
+{"event":"http","method":"GET","status":200,"trace":"04781cda6e042ba6"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"27bac3f9d989430b"}
+INFO:     127.0.0.1:49737 - "GET / HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"827d66bcd815bdcd"}
+INFO:     127.0.0.1:49737 - "GET /api/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49749 - "WebSocket /ws" [accepted]
+INFO:     connection open
+{"event":"http","method":"GET","status":200,"trace":"e065858dfa5c7ac2"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"88caf0c2f855701d"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"POST","status":200,"trace":"f1f25da0d2355fba"}
+INFO:     127.0.0.1:49737 - "POST /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"038959a4243d73cc"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"88cc5871d5975fd5"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"cc941fb1c2303f6b"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"49c2f4764835b37e"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"run_finished","frames":101,"run":"3cf701c8-d538-4ba9-851b-04c6a8212984","status":"cancelled"}
+{"event":"http","method":"POST","status":200,"trace":"625e74e407cca1d6"}
+INFO:     127.0.0.1:49737 - "POST /api/stop HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"d90cee917e75adb1"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"0515c5c965a63921"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"d4688791f00feca3"}
+INFO:     127.0.0.1:49737 - "GET /api/runs/3cf701c8-d538-4ba9-851b-04c6a8212984/replay HTTP/1.1" 200 OK
+{"event":"http","method":"POST","status":200,"trace":"800eae4ba5d23240"}
+INFO:     127.0.0.1:49737 - "POST /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"2fffeef170b403f8"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"5fd4e8ef311b8cff"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"e83d4036c01ae9ed"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"f1ae41b6106a8395"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b750f006af470c22"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"f968612fa9094e97"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"067437fbd069fa67"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"2417bb62a30e1de4"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ed608a32845f841e"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"00d69522d890c899"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ad03ac5bab5170f7"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"fb206fecdd0e77cb"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ff5bd01a6e4a5399"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"4d6ea29d3802e9e3"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"6552c6f0884d438b"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"c1220ef0f3857891"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b8eb341d74d22845"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"a4f79be802448382"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"3ca902b387253882"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"f02f6cb43b63c459"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"60ce995d49398eac"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"9b9cbe487764342c"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"acabeb87a2e5cb77"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b4b76ff56325620e"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ace24dc3ddaa1ec3"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"d3676098753fdecd"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"3e1aa713b5151ae2"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"73ff08d0a8d69e89"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"c4b3e1470bdbcb9f"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"0f9d12fd1c0f1bdb"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b1605824aaabb925"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"8144e8df6374ad6d"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7e7447229b0b0f94"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"9f909fd858c0a821"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"9bda56c26c534276"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"3417f02ab24a7d3b"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"3eff6aa7c3bbdea2"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"090430768985f8da"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"5c02fef1322d1ce1"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"93918176a9863168"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"71b29249096f1403"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"296debb75dc100f7"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"c7783683c4c5402e"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"aa26e5c60fb5cefe"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7d3bb492091a27fd"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"4318f896099e8be3"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"af0668b77223034d"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"d7d72350553a72db"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"83cc59d8fd61bbbd"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ededaa3997f3d0ed"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"531579b7edcd9553"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"39b31f129d44a5b4"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"a1ffdb36e0ec4093"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"3a065f91aba76402"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"52827eaa77b4a32a"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"90c6e4cf18cd85fd"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"50b0b429d4f0b3ce"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"70f84e256f6977f3"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"dc5d70b1a22ddd87"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"dab3525eb5a574f3"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"3159054968857081"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ac4598ab32ee336d"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7f5097493dc876f8"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7eec172cb6505430"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"209d0ad2d2fd04c1"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ecfedec0464d3692"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"8c8962ec624ac05b"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"d9c570e7e06c00e9"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"99d290ca01a21763"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"edc7fe0f2c155bfb"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"6e622c89f22230ee"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b8f313ed439012a9"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"5eec74a760015416"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"99eb9b7dd03ea64a"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"0009ea899ea58d8c"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b50fed42dfc97ebf"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"2781e55197137b4e"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"cf846386c49a96d5"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7d47deb04754991c"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"0776714924f64c62"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"d8bb123ecce4d154"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"43fcb4656dbe98b9"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"e1bb7e1e79360cf6"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"c23b8882970a286b"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"93d26ffd62bd30c8"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"a5a2b70b69b8b7bf"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"0daeb03aaba58bf5"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"a8b3beb9e6e60c86"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"ff7268b3c4eda990"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"e990bba3e188e09f"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"2e3bb45400e24394"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"9b68e4dc6174f76c"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"a73e8e1b509f1233"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"cf071cfe133b8c3f"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"8130ba184257e791"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"f7b480d85764a98a"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"1ade38fef0fc4945"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"92796b427d6c1d9a"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"445048f5770ef227"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"35f0b710f9283d37"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"99d825b809265f62"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"2703b868925a146f"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"34eff0c3f7f3d81f"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"db69f2f39ddd7a79"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"0f8091c76eaa3c0d"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"5a7ae7294cf32f6f"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"fa4ea8314b3d3792"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"7fe4ea2cd2bdf5b2"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"28e29feb8fd35273"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"cf94f790a38a8f9c"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"6ed2e36a75344cee"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"4bd1c55239b632b8"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"b517c28f5c2f3692"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"40786a98247ef2d7"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"91e271a2c3dafd1c"}
+INFO:     127.0.0.1:49737 - "GET /api/runs HTTP/1.1" 200 OK
+{"event":"http","method":"GET","status":200,"trace":"61e82d3ca9d751b5"}
+INFO:     127.0.0.1:49737 - "GET /api/station HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [86256]

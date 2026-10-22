@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 r = Path("docs/results")
+media = json.loads((r / "ui-redesign/demo-probe.json").read_text())
 b = json.loads((r / "benchmark.json").read_text())
 w = json.loads((r / "browser.json").read_text())
 p = json.loads((r / "public-replay.json").read_text())
@@ -19,7 +20,7 @@ text = f"""# Meridian
 
 Align noisy sensor streams without allowing late samples or slow viewers to rewrite committed history.
 
-**Status: partial — live deployment and a completed demo recording are outstanding.** Independent public repository: https://github.com/rjrddy/meridian.
+**Status: partial — live deployment is outstanding.** Independent public repository: https://github.com/rjrddy/meridian.
 
 ## Results
 
@@ -32,6 +33,7 @@ All figures below are derived by `scripts/render_readme.py` from saved output in
 | Observed input rate during browser trial | {w["observed_samples_per_second"]:.2f} samples/s across {w["configured_streams"]} sources | [browser.json](docs/results/browser.json) |
 | Durable batch latency, p50 / p99 | {b["durable"]["batch_p50_ms"]:.3f} / {b["durable"]["batch_p99_ms"]:.3f} ms | [benchmark.json](docs/results/benchmark.json), [samples](docs/results/durable-samples.json) |
 | Public sensor replay | {p["records"]} records; bit-identical: {p["bit_identical"]} | [public-replay.json](docs/results/public-replay.json) |
+| Redesigned console recording | {float(media["format"]["duration"]):.2f} seconds | [video](docs/results/ui-redesign/demo.webm), [ffprobe](docs/results/ui-redesign/demo-probe.json) |
 | Synthetic test-station yield | {b["station"]["yield_percent"]:.1f}% of {b["station"]["units"]} units | [benchmark.json](docs/results/benchmark.json) |
 
 Browser latency starts before the first event of each synthetic batch and ends at its WebSocket message handler on the same machine. It includes compute, SQLite commit and local delivery, but excludes paint and physical hardware capture. The run had configured source rates {", ".join(f"{x:.2f}" for x in w["configured_source_rates_hz"])} Hz, {w["dropout"]:.0%} packet dropout and {w["frames"]} received frames. These short trials do not establish a sustained service SLO. Durable batch timing excludes the browser. Core timings below measure individual adapter events without pacing or storage.
@@ -58,6 +60,10 @@ flowchart LR
   A --> T[Synthetic instrument station]
 ```
 
+![Meridian console](docs/results/ui-redesign/console-cover.png)
+
+[Visual design references and UI checks](docs/UI.md) · [Redesigned console recording](docs/results/ui-redesign/demo.webm). Historical benchmark evidence remains separate.
+
 ## Run it
 
 Docker Compose is required for the container path. From a clone:
@@ -81,11 +87,11 @@ Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migr
 - Live viewer delivery may drop frames; recorded history is authoritative. The app bounds queues but transport buffers also exist. Disk retention and backup automation are not implemented.
 - Public Intel Lab data is a replay compatibility exercise across different physical locations, not a truth-scored sensor-fusion benchmark. An explicit source reuse license was not identified, so fetch the archive separately. Source and archive checksum are saved.
 - Live demo: **not deployed**. The supplied free-tier Render configuration has ephemeral storage and must not be described as durable across redeploys. No hosting account was created.
-- Screenshots are saved, and [exact recording steps](docs/DEMO.md) are provided. A completed screen recording is not measured or claimed.
+- Screenshots are saved, and [exact recording steps](docs/DEMO.md) are provided. The redesigned console recording is measured in [its media probe](docs/results/ui-redesign/demo-probe.json).
 
 ## Next
 
-Deploy with an explicitly chosen persistence policy; record the demo; add independently calibrated cross-sensor correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.
+Deploy with an explicitly chosen persistence policy; add independently calibrated cross-sensor correlation, clock-drift probes, longer browser load/chaos campaigns and hardware timestamping. Optional dispatch simulation and video/pose validation stay outside the required scalar fusion core; the old repositories remain intact.
 """
 Path("README.md").write_text(text.replace("\n docker compose", "\ndocker compose"))
 print("README rendered from saved results")

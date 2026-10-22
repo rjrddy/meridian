@@ -1,0 +1,38 @@
+Project: Meridian
+Command: make build
+.venv/bin/python -m pip install --no-deps -e .
+Obtaining file:///Users/rajreddy/dev/outreach/flagships/meridian
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: meridian-fusion
+  Building editable for meridian-fusion (pyproject.toml): started
+  Building editable for meridian-fusion (pyproject.toml): finished with status 'done'
+  Created wheel for meridian-fusion: filename=meridian_fusion-0.1.0-0.editable-cp313-cp313-macosx_15_0_arm64.whl size=2955 sha256=d2510e7070b730a4a7c0dae133862444ec113b3ad51cc77d2a835c6b40aa96aa
+  Stored in directory: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/pip-ephem-wheel-cache-t922d95f/wheels/41/79/05/c565da01dff202707b6cc512a6e7d0c2f6edce883d94c889cf
+Successfully built meridian-fusion
+Installing collected packages: meridian-fusion
+  Attempting uninstall: meridian-fusion
+    Found existing installation: meridian-fusion 0.1.0
+    Uninstalling meridian-fusion-0.1.0:
+      Successfully uninstalled meridian-fusion-0.1.0
+Successfully installed meridian-fusion-0.1.0
+npm run build --prefix apps/web
+
+> meridian-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-BJpp9tqS.css    8.41 kB │ gzip:  2.52 kB
+dist/assets/index-DceVxSVJ.js   204.94 kB │ gzip: 64.35 kB
+✓ built in 511ms

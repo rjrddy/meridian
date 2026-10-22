@@ -1,0 +1,14 @@
+Command: npm --prefix apps/web run build
+
+> meridian-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.30 kB
+dist/assets/index-uXBqAxJD.css    8.41 kB │ gzip:  2.52 kB
+dist/assets/index-BptOM75V.js   204.94 kB │ gzip: 64.35 kB
+✓ built in 623ms

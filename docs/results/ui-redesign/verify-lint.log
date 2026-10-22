@@ -1,0 +1,11 @@
+Command: make lint
+.venv/bin/python -m ruff check meridian tests benchmarks scripts setup.py
+All checks passed!
+.venv/bin/python -m ruff format --check meridian tests benchmarks scripts setup.py
+18 files already formatted
+.venv/bin/clang-format --dry-run --Werror core/fusion.cpp
+npm run lint --prefix apps/web
+
+> meridian-console@0.1.0 lint
+> tsc --noEmit
+

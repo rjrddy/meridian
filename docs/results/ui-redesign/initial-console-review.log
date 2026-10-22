@@ -1,0 +1,27 @@
+Command: .venv/bin/python /Users/rajreddy/dev/outreach/flagships/meridian/docs/results/ui-redesign/review-console.py
+{
+  "frames": 101,
+  "latency_p50_ms": 0.7121562957763672,
+  "latency_p99_ms": 275.3279209136963,
+  "boundary": "synthetic batch capture through local WebSocket browser message event; excludes paint; same machine wall clock",
+  "configured_streams": 3,
+  "configured_ticks_per_second": 50,
+  "configured_source_rates_hz": [
+    50,
+    25,
+    16.666666666666668
+  ],
+  "observed_samples_per_second": 68.70602634213552,
+  "dropout": 0.1,
+  "page_errors": [],
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "verified_actions": [
+    "login",
+    "live frames",
+    "stop",
+    "persisted replay",
+    "station batch",
+    "mobile layout"
+  ]
+}

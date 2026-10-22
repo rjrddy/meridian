@@ -11,4 +11,4 @@ Suggested ninety-second recording:
 - Run the synthetic test-station batch. Explain pass/out-of-spec/timeout categories, bounded retries and SQL persistence.
 - Finish with the saved benchmark results and caught stale-packet failure. State the unresolved limits listed in README.
 
-The suggested recording length is a script target, not a measured completed recording. No video recording or live deployment is claimed until those artifacts exist. Browser verification screenshots are in docs/results/.
+The redesigned console recording is saved in [ui-redesign/demo.webm](results/ui-redesign/demo.webm), with its actual duration in [demo-probe.json](results/ui-redesign/demo-probe.json). It demonstrates the real local console; live deployment remains outstanding. The capture leaves extra wall-clock margin and checks encoded duration rather than assuming the timer equals video length.

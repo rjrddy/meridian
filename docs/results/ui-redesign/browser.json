@@ -1,0 +1,26 @@
+{
+  "frames": 101,
+  "latency_p50_ms": 0.7278919219970703,
+  "latency_p99_ms": 20.502805709838867,
+  "boundary": "synthetic batch capture through local WebSocket browser message event; excludes paint; same machine wall clock",
+  "configured_streams": 3,
+  "configured_ticks_per_second": 50,
+  "configured_source_rates_hz": [
+    50,
+    25,
+    16.666666666666668
+  ],
+  "observed_samples_per_second": 72.13668017686659,
+  "dropout": 0.1,
+  "page_errors": [],
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "verified_actions": [
+    "login",
+    "live frames",
+    "stop",
+    "persisted replay",
+    "station batch",
+    "mobile layout"
+  ]
+}

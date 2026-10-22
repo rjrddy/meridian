@@ -1,0 +1,9 @@
+{
+  "project": "Meridian",
+  "real_service_browser_flow": "pass",
+  "desktop_and_phone_layout": "pass",
+  "recording_seconds": 96.36,
+  "recording_gate_passed": true,
+  "historical_benchmarks_rerun": false,
+  "publication": "pending explicit approval"
+}
