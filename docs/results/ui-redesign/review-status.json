@@ -5,5 +5,13 @@
   "recording_seconds": 96.36,
   "recording_gate_passed": true,
   "historical_benchmarks_rerun": false,
-  "publication": "pending explicit approval"
+  "publication": "pending explicit approval",
+  "fresh_clone_frontend_check": {
+    "name": "Meridian",
+    "pass": true,
+    "source_commit": "77f2604651c189968625024450b80b2eba8a40c3",
+    "clone": "/tmp/flagship-ui-clones-q6zy8d1a/meridian",
+    "scope": "Independent frontend dependency install, lint, build; public evidence package where present. No new full backend container claim."
+  },
+  "full_backend_fresh_clone_rerun": false
 }

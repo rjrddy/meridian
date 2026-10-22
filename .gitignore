@@ -11,3 +11,4 @@ __pycache__/
 .hypothesis/
 .env
 data/
+.cache/

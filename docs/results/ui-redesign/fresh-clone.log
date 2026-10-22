@@ -1,0 +1,35 @@
+
+Command: git clone --no-local /Users/rajreddy/dev/outreach/flagships/meridian /tmp/flagship-ui-clones-q6zy8d1a/meridian
+Cloning into '/tmp/flagship-ui-clones-q6zy8d1a/meridian'...
+
+Command: npm --prefix apps/web ci --prefer-offline
+
+added 21 packages, and audited 22 packages in 1s
+
+5 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Command: npm --prefix apps/web run lint
+
+> meridian-console@0.1.0 lint
+> tsc --noEmit
+
+
+Command: npm --prefix apps/web run build
+
+> meridian-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-BJpp9tqS.css    8.41 kB │ gzip:  2.52 kB
+dist/assets/index-DceVxSVJ.js   204.94 kB │ gzip: 64.35 kB
+✓ built in 652ms
+
+PASS: independent clone frontend install/lint/build; evidence site packaged where present. Backend fresh-clone runtime was not rerun by this UI check.
