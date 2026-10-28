@@ -19,3 +19,5 @@ Accessibility reference: [W3C SCR40](https://www.w3.org/WAI/WCAG21/Techniques/cl
 The authenticated backend was not restarted for this UI-only change. The console connection/login surface and built frontend were checked; existing saved campaign results and guarantees were not remeasured.
 
 Button feedback begins when click targeting is committed, so the first press does not shrink a hitbox underneath the pointer. Editable/dragging surfaces are excluded. Backend APIs, ranking/math policies, measurements, and document source data were not changed.
+
+Connected controls recoil only with their immediate previous/next matching siblings. The left sibling moves left, the right moves right; distant controls do not react. The runtime reads sibling references, not geometry.
