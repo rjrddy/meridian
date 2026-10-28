@@ -1,0 +1,17 @@
+{
+  "project": "meridian",
+  "motion_profile": "Calibration detents",
+  "source_sha256": {
+    "apps/web/src/motion.ts": "f35ab7c8856f97cfe6653425e2c926348f7178a3399317d9fd8c9ed4ba7114dd",
+    "apps/web/src/style.css": "4ad55a01c38aec8a14306b21a95a93badd29ead3d8676bcb21a3fc53f7d56b75"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "not rerun; actual console entry state and public saved evidence checked",
+  "showcase_contract": "not applicable",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}

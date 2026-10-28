@@ -64,6 +64,9 @@ Set your own password in the editor, then open http://localhost:8000 and sign in
 
 ## Decisions and limits
 
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.
+
+
 Read [DESIGN.md](docs/DESIGN.md), [ADRs](docs/adr), [migration record](docs/migration/meridian.md), [INTERVIEW.md](INTERVIEW.md) and [DRILL.md](docs/DRILL.md).
 
 - Explicit reference probes calibrate offsets; clock drift is not inferred. Causal hold avoids future leakage and ages stale sources out. Unequal source rates and timestamp jitter are synthetic.
